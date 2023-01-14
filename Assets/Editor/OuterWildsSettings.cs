@@ -10,10 +10,11 @@ using UnityEngine.UIElements;
 class OuterWildsSettings : ScriptableObject
 {
     public const string k_OWSettingsPath = "Assets/Editor/OuterWildsSettings.asset";
-    
+
     public string m_AssetBundleOutputPath; 
     public bool m_StartGameAfterBuild;
     public string m_GameExePath;
+    public string m_ModOutputPath;
 
     internal static OuterWildsSettings GetOrCreateSettings()
     {
@@ -31,6 +32,7 @@ class OuterWildsSettings : ScriptableObject
             settings.m_GameExePath = "C:/Program Files (x86)/Steam/steamapps/common/Outer Wilds/OuterWilds.exe";
             // Default path for the mod loader/game exe
             settings.m_GameExePath = "%APPDATA%/OuterWildsModManager/OWML/OWML.Launcher.exe";
+            settings.m_ModOutputPath = "%APPDATA%/OuterWildsModManager/OWML/Mods";
         }
         return settings;
     }
@@ -85,7 +87,7 @@ static class OuterWildsSettingsIMGUIRegister
 
 public class BuildAssetBundles
 {
-    [MenuItem("Assets/Build AssetBundles")]
+    [MenuItem("Export/Build AssetBundles")]
     static void BuildAllAssetBundles()
     {
         // Get the assetBundleDirectory path from the project settings (k_OWSettingsPath)
@@ -109,5 +111,72 @@ public class BuildAssetBundles
             Debug.Log("Starting game at : " + gameExePath + " ...");
             System.Diagnostics.Process.Start(gameExePath);
         }
+    }
+}
+
+public class BuildModFiles
+{
+    [MenuItem("Export/Build Mod Files")]
+    static void BuildAllModFiles()
+    {
+        var settings = OuterWildsSettings.GetOrCreateSettings();
+        var assetBundleDirectory = settings.m_AssetBundleOutputPath;
+        Debug.Log("Asset Bundle Path: " + assetBundleDirectory);
+        var modOutputRootDirectory = settings.m_ModOutputPath;
+        modOutputRootDirectory = modOutputRootDirectory.Replace("%APPDATA%", Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData));
+        Debug.Log("Mod Output Path: " + modOutputRootDirectory);
+        var rootDirectory = Directory.GetCurrentDirectory();
+        Debug.Log("Project Root Path: " + rootDirectory);
+        var manifestPath = Path.Combine(rootDirectory, "manifest.json");
+        Debug.Log("Manifest Path: " + manifestPath);
+        var manifest = JsonUtility.FromJson<ManifestJson>(File.ReadAllText(manifestPath));
+        var modOutputDirectory = Path.Combine(modOutputRootDirectory, manifest.uniqueName);
+
+        Directory.Delete(modOutputDirectory, true);
+        Directory.CreateDirectory(Path.Combine(modOutputDirectory));
+        Directory.CreateDirectory(Path.Combine(modOutputDirectory, "assetbundles"));
+        foreach (var path in Directory.EnumerateFiles(assetBundleDirectory))
+        {
+            var name = Path.GetFileName(path);
+            Copy(Path.Combine(assetBundleDirectory, name), Path.Combine(modOutputDirectory, "assetbundles", name));
+        }
+        foreach (var path in Directory.EnumerateFiles(rootDirectory))
+        {
+            var name = Path.GetFileName(path);
+            if (name.EndsWith(manifest.filename) || name == "default-config.json" || name == "manifest.json")
+            {
+                Copy(Path.Combine(rootDirectory, name), Path.Combine(modOutputDirectory, name));
+            }
+        }
+        Directory.CreateDirectory(Path.Combine(modOutputDirectory, "planets"));
+        foreach (var path in Directory.EnumerateFiles(Path.Combine(rootDirectory, "planets")))
+        {
+            var name = Path.GetFileName(path);
+            Copy(Path.Combine(Path.Combine(rootDirectory, "planets"), name), Path.Combine(modOutputDirectory, "planets", name));
+        }
+        Directory.CreateDirectory(Path.Combine(modOutputDirectory, "systems"));
+        foreach (var path in Directory.EnumerateFiles(Path.Combine(rootDirectory, "systems")))
+        {
+            var name = Path.GetFileName(path);
+            Copy(Path.Combine(Path.Combine(rootDirectory, "systems"), name), Path.Combine(modOutputDirectory, "systems", name));
+        }
+    }
+
+    static void Copy(string src, string dest)
+    {
+        Debug.Log("Copying " + src + " to " + dest);
+        File.Copy(src, dest, true);
+    }
+
+    [System.Serializable]
+    public class ManifestJson
+    {
+        public string filename;
+        public string author;
+        public string name;
+        public string uniqueName;
+        public string version;
+        public string owmlVersion;
+        public List<string> dependencies;
     }
 }
