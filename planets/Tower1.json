@@ -1,0 +1,28 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name" : "1st Floor",
+	"Base": {
+		"groundSize": 0,
+		"surfaceSize": 200,
+		"surfaceGravity": 0,
+		"hasMapMarker": true,
+		"ambientLight": 0.8
+	},
+	"Orbit": {
+		"staticPosition": {
+			"x": 200,
+			"y": 30000,
+			"z": 0
+		},
+		"isStatic": true,
+		"siderealPeriod": 1
+	},
+	"Props": {
+		"details": [
+			{
+				"assetBundle": "assetbundles/puzzleship",
+				"path": "Assets/Mod Assets/Objects/TowerCenter.prefab"
+			}
+		]
+	}
+}
