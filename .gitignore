@@ -60,3 +60,6 @@ crashlytics-build.properties
 
 *.meta
 *.meta
+
+# Project-specific
+/Assets/StreamingAssets/AssetBundles/
