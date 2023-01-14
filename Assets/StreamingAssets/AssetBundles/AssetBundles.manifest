@@ -1,7 +1,10 @@
 ManifestFileVersion: 0
-CRC: 981938626
+CRC: 4114645510
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: test
+      Dependencies: {}
+    Info_1:
+      Name: puzzleship
       Dependencies: {}
