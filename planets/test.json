@@ -21,7 +21,7 @@
 		"playerSpawnPoint": {
 			"x": 0,
 			"y": 0,
-			"z": 0
+			"z": -25
 		},
 		"playerSpawnRotation": {
 			"x": 0,
@@ -35,6 +35,120 @@
 			{
 				"assetBundle": "assetbundles/puzzleship",
 				"path": "Assets/Mod Assets/Objects/PuzzleRoomSignalScope.prefab"
+			}
+		],
+		"singularities": [
+			{
+				"parentPath": "Sector/PuzzleRoomSignalScope/Quantum Ball Sockets/Socket 0/Active",
+				"isRelativeToParent": true,
+				"position": {
+					"x": 0,
+					"y": 5,
+					"z": 0
+				},
+				"horizonRadius": 1,
+				"distortRadius": 2.5,
+				"hasWarpEffects": false,
+				"type": "blackHole",
+				"uniqueID": "PuzzleRoomSignalScope_Socket0_Active"
+			},
+			{
+				"parentPath": "Sector/PuzzleRoomSignalScope/Quantum Ball Sockets/Socket 0/Inactive",
+				"isRelativeToParent": true,
+				"position": {
+					"x": 0,
+					"y": 5,
+					"z": 0
+				},
+				"horizonRadius": 1,
+				"distortRadius": 2.5,
+				"hasWarpEffects": false,
+				"type": "whiteHole",
+				"uniqueID": "PuzzleRoomSignalScope_Socket0_Inactive"
+			},
+			{
+				"parentPath": "Sector/PuzzleRoomSignalScope/Quantum Ball Sockets/Socket 1/Active",
+				"isRelativeToParent": true,
+				"position": {
+					"x": 0,
+					"y": 5,
+					"z": 0
+				},
+				"horizonRadius": 1,
+				"distortRadius": 2.5,
+				"hasWarpEffects": false,
+				"type": "blackHole",
+				"uniqueID": "PuzzleRoomSignalScope_Socket1_Active"
+			},
+			{
+				"parentPath": "Sector/PuzzleRoomSignalScope/Quantum Ball Sockets/Socket 1/Inactive",
+				"isRelativeToParent": true,
+				"position": {
+					"x": 0,
+					"y": 5,
+					"z": 0
+				},
+				"horizonRadius": 1,
+				"distortRadius": 2.5,
+				"hasWarpEffects": false,
+				"type": "whiteHole",
+				"uniqueID": "PuzzleRoomSignalScope_Socket1_Inactive"
+			},
+			{
+				"parentPath": "Sector/PuzzleRoomSignalScope/Quantum Ball Sockets/Socket 2/Active",
+				"isRelativeToParent": true,
+				"position": {
+					"x": 0,
+					"y": 5,
+					"z": 0
+				},
+				"horizonRadius": 1,
+				"distortRadius": 2.5,
+				"hasWarpEffects": false,
+				"type": "blackHole",
+				"uniqueID": "PuzzleRoomSignalScope_Socket2_Active"
+			},
+			{
+				"parentPath": "Sector/PuzzleRoomSignalScope/Quantum Ball Sockets/Socket 2/Inactive",
+				"isRelativeToParent": true,
+				"position": {
+					"x": 0,
+					"y": 5,
+					"z": 0
+				},
+				"horizonRadius": 1,
+				"distortRadius": 2.5,
+				"hasWarpEffects": false,
+				"type": "whiteHole",
+				"uniqueID": "PuzzleRoomSignalScope_Socket2_Inactive"
+			},
+			{
+				"parentPath": "Sector/PuzzleRoomSignalScope/Quantum Ball Sockets/Socket 3/Active",
+				"isRelativeToParent": true,
+				"position": {
+					"x": 0,
+					"y": 5,
+					"z": 0
+				},
+				"horizonRadius": 1,
+				"distortRadius": 2.5,
+				"hasWarpEffects": false,
+				"type": "blackHole",
+				"uniqueID": "PuzzleRoomSignalScope_Socket3_Active"
+			},
+			{
+				"parentPath": "Sector/PuzzleRoomSignalScope/Quantum Ball Sockets/Socket 3/Inactive",
+				"isRelativeToParent": true,
+				"position": {
+					"x": 0,
+					"y": 5,
+					"z": 0
+				},
+				"horizonRadius": 1,
+				"distortRadius": 2.5,
+				"hasWarpEffects": false,
+				"type": "whiteHole",
+				"uniqueID": "PuzzleRoomSignalScope_Socket3_Inactive"
 			}
 		]
 	}
