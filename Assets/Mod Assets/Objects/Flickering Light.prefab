@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 7831335501185896110}
   - component: {fileID: 87362896222929991}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Flickering Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,8 +133,9 @@ Animation:
   m_GameObject: {fileID: 3418186731500969209}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 93843b03ab7e89a41927ddc0aedbe82c, type: 2}
-  m_Animations: []
+  m_Animation: {fileID: 7400000, guid: 639d5bc6a44d1a347a643c5939fed77f, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 639d5bc6a44d1a347a643c5939fed77f, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
