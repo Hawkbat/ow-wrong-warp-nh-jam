@@ -161,6 +161,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "jp.keijiro.noiseshader": {
+      "version": "2.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmjs.com"
+    },
     "nuget.mono-cecil": {
       "version": "0.1.6-preview",
       "depth": 1,
