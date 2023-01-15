@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SigilNumberThree
-  m_Shader: {fileID: 4800000, guid: c4c4841d6622d67499155813a72bf17c, type: 3}
+  m_Shader: {fileID: 4800000, guid: 954f5b72191ddb74b8491e79e8d9b65b, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4610102f0ec9a3f4ebf8febfe33ed639, type: 3}
+        m_Texture: {fileID: 2800000, guid: ad09b9dbc1c29e7469860079dbd23311, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:

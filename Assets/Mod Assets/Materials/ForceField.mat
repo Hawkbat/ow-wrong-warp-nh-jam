@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ForceField
-  m_Shader: {fileID: 4800000, guid: 8760de1cfc432b648b3649005e733d61, type: 3}
+  m_Shader: {fileID: 4800000, guid: ca22cd91b18a8d74c93127553c2ef64b, type: 3}
   m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _FADING_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
