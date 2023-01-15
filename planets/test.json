@@ -28,7 +28,17 @@
 			"y": 180,
 			"z": 0
 		},
-		"startWithSuit": true
+		"startWithSuit": true,
+		"shipSpawnPoint": {
+			"x": 0,
+			"y": 15,
+			"z": 25
+		},
+		"shipSpawnRotation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		}
 	},
 	"Props": {
 		"details": [
