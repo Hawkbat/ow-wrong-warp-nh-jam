@@ -90,7 +90,7 @@
 				}
 			},
 			{
-				"path": "TimberHearth_Body/Sector_TH/Sector_NomaiMines/Interactables_NomaiMines/Props_NOM_Whiteboard/Props_NOM_Whiteboard (1)",
+				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/OrbitalControl/Prefab_NOM_Whiteboard_Shared/Props_NOM_Whiteboard_Shared",
 				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/VictoryRoomWhiteboard",
 				"isRelativeToParent": true
 			}
