@@ -48,46 +48,27 @@
 			},
 			{
 				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/GravityFieldExhibit/Prefab_NOM_GravityCrystal",
+				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/GravityCrystalBottom",
+				"isRelativeToParent": true,
 				"removeChildren": [
 					"CapsuleVolume_NOM_GravityCrystal"
-				],
-				"position": {
-					"x": 0,
-					"y": 4,
-					"z": 0
-				},
-				"rotation": {
-					"x": 0,
-					"y": 0,
-					"z": 180
-				}
+				]
 			},
 			{
 				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/GravityFieldExhibit/Prefab_NOM_GravityCrystal",
+				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/GravityCrystalMiddle",
+				"isRelativeToParent": true,
 				"removeChildren": [
 					"CapsuleVolume_NOM_GravityCrystal"
-				],
-				"position": {
-					"x": 0,
-					"y": 5,
-					"z": 0
-				}
+				]
 			},
 			{
 				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/GravityFieldExhibit/Prefab_NOM_GravityCrystal",
+				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/GravityCrystalTop",
+				"isRelativeToParent": true,
 				"removeChildren": [
 					"CapsuleVolume_NOM_GravityCrystal"
-				],
-				"position": {
-					"x": 0,
-					"y": 14,
-					"z": 0
-				},
-				"rotation": {
-					"x": 0,
-					"y": 0,
-					"z": 180
-				}
+				]
 			},
 			{
 				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/OrbitalControl/Prefab_NOM_Whiteboard_Shared/Props_NOM_Whiteboard_Shared",
@@ -124,13 +105,8 @@
 				"uniqueID": "PuzzleRoomSignalScope_VictoryRoom"
 			},
 			{
-				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/Quantum Ball Sockets/Socket 0/Active",
+				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/Quantum Ball Sockets/Socket 0/Active/BlackHole",
 				"isRelativeToParent": true,
-				"position": {
-					"x": 0,
-					"y": 11.5,
-					"z": 0
-				},
 				"horizonRadius": 0.5,
 				"distortRadius": 1.25,
 				"hasWarpEffects": false,
@@ -139,13 +115,8 @@
 				"uniqueID": "PuzzleRoomSignalScope_Socket0_Active"
 			},
 			{
-				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/Quantum Ball Sockets/Socket 0/Inactive",
+				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/Quantum Ball Sockets/Socket 0/Inactive/BlackHole",
 				"isRelativeToParent": true,
-				"position": {
-					"x": 0,
-					"y": 11.5,
-					"z": 0
-				},
 				"horizonRadius": 0.5,
 				"distortRadius": 1.25,
 				"hasWarpEffects": false,
@@ -153,13 +124,8 @@
 				"uniqueID": "PuzzleRoomSignalScope_Socket0_Inactive"
 			},
 			{
-				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/Quantum Ball Sockets/Socket 1/Active",
+				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/Quantum Ball Sockets/Socket 1/Active/BlackHole",
 				"isRelativeToParent": true,
-				"position": {
-					"x": 0,
-					"y": 11.5,
-					"z": 0
-				},
 				"horizonRadius": 0.5,
 				"distortRadius": 1.25,
 				"hasWarpEffects": false,
@@ -168,13 +134,8 @@
 				"uniqueID": "PuzzleRoomSignalScope_Socket1_Active"
 			},
 			{
-				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/Quantum Ball Sockets/Socket 1/Inactive",
+				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/Quantum Ball Sockets/Socket 1/Inactive/BlackHole",
 				"isRelativeToParent": true,
-				"position": {
-					"x": 0,
-					"y": 11.5,
-					"z": 0
-				},
 				"horizonRadius": 0.5,
 				"distortRadius": 1.25,
 				"hasWarpEffects": false,
@@ -182,13 +143,8 @@
 				"uniqueID": "PuzzleRoomSignalScope_Socket1_Inactive"
 			},
 			{
-				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/Quantum Ball Sockets/Socket 2/Active",
+				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/Quantum Ball Sockets/Socket 2/Active/BlackHole",
 				"isRelativeToParent": true,
-				"position": {
-					"x": 0,
-					"y": 11.5,
-					"z": 0
-				},
 				"horizonRadius": 0.5,
 				"distortRadius": 1.25,
 				"hasWarpEffects": false,
@@ -197,13 +153,8 @@
 				"uniqueID": "PuzzleRoomSignalScope_Socket2_Active"
 			},
 			{
-				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/Quantum Ball Sockets/Socket 2/Inactive",
+				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/Quantum Ball Sockets/Socket 2/Inactive/BlackHole",
 				"isRelativeToParent": true,
-				"position": {
-					"x": 0,
-					"y": 11.5,
-					"z": 0
-				},
 				"horizonRadius": 0.5,
 				"distortRadius": 1.25,
 				"hasWarpEffects": false,
@@ -211,13 +162,8 @@
 				"uniqueID": "PuzzleRoomSignalScope_Socket2_Inactive"
 			},
 			{
-				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/Quantum Ball Sockets/Socket 3/Active",
+				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/Quantum Ball Sockets/Socket 3/Active/BlackHole",
 				"isRelativeToParent": true,
-				"position": {
-					"x": 0,
-					"y": 11.5,
-					"z": 0
-				},
 				"horizonRadius": 0.5,
 				"distortRadius": 1.25,
 				"hasWarpEffects": false,
@@ -226,13 +172,8 @@
 				"uniqueID": "PuzzleRoomSignalScope_Socket3_Active"
 			},
 			{
-				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/Quantum Ball Sockets/Socket 3/Inactive",
+				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/Quantum Ball Sockets/Socket 3/Inactive/BlackHole",
 				"isRelativeToParent": true,
-				"position": {
-					"x": 0,
-					"y": 11.5,
-					"z": 0
-				},
 				"horizonRadius": 0.5,
 				"distortRadius": 1.25,
 				"hasWarpEffects": false,
