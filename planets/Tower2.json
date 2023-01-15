@@ -11,7 +11,7 @@
 	"Orbit": {
 		"staticPosition": {
 			"x": 60,
-			"y": 30020,
+			"y": 30000,
 			"z": 0
 		},
 		"isStatic": true,

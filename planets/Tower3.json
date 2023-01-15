@@ -11,11 +11,11 @@
 	"Orbit": {
 		"staticPosition": {
 			"x": 60,
-			"y": 30040,
+			"y": 30020,
 			"z": 0
 		},
 		"isStatic": true,
-		"siderealPeriod": 1.2
+		"siderealPeriod": 1.5
 	},
 	"Props": {
 		"details": [

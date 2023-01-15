@@ -3,15 +3,15 @@
 	"name" : "1st Floor",
 	"Base": {
 		"groundSize": 0,
-		"surfaceSize": 200,
+		"surfaceSize": 10,
 		"surfaceGravity": 0,
 		"hasMapMarker": true,
 		"ambientLight": 0.8
 	},
 	"Orbit": {
 		"staticPosition": {
-			"x": 200,
-			"y": 30000,
+			"x": 60,
+			"y": 29980,
 			"z": 0
 		},
 		"isStatic": true,
