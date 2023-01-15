@@ -3,15 +3,15 @@
 	"name" : "2nd Floor",
 	"Base": {
 		"groundSize": 0,
-		"surfaceSize": 200,
+		"surfaceSize": 10,
 		"surfaceGravity": 0,
 		"hasMapMarker": true,
 		"ambientLight": 0.8
 	},
 	"Orbit": {
 		"staticPosition": {
-			"x": 200,
-			"y": 32050,
+			"x": 60,
+			"y": 30020,
 			"z": 0
 		},
 		"isStatic": true,
