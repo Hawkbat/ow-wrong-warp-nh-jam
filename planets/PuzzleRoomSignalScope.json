@@ -90,7 +90,7 @@
 				"detectionRadius": 100,
 				"sourceRadius": 0.5,
 				"onlyAudibleToScope": true,
-				"audio": "Quantum Ambience_LP"
+				"audio": "QuantumAmbience_LP"
 			}
 		],
 		"singularities": [
