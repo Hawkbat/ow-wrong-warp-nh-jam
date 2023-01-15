@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
-	"name" : "Test Station",
+	"name" : "Puzzle Room (Signal Scope)",
 	"Base": {
 		"groundSize": 0,
 		"surfaceSize": 200,
@@ -14,8 +14,7 @@
 			"y": 30000,
 			"z": 0
 		},
-		"isStatic": true,
-		"siderealPeriod": 1
+		"isStatic": true
 	},
 	"Spawn": {
 		"playerSpawnPoint": {
