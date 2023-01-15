@@ -21,11 +21,11 @@
 		"playerSpawnPoint": {
 			"x": 0,
 			"y": 0,
-			"z": -25
+			"z": 25
 		},
 		"playerSpawnRotation": {
 			"x": 0,
-			"y": 0,
+			"y": 180,
 			"z": 0
 		},
 		"startWithSuit": true
@@ -35,6 +35,38 @@
 			{
 				"assetBundle": "assetbundles/puzzleship",
 				"path": "Assets/Mod Assets/Objects/PuzzleRoomSignalScope.prefab"
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/GravityFieldExhibit/Prefab_NOM_GravityCrystal",
+				"removeChildren": [
+					"CapsuleVolume_NOM_GravityCrystal"
+				],
+				"position": {
+					"x": 0,
+					"y": 5,
+					"z": 0
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/GravityFieldExhibit/Prefab_NOM_GravityCrystal",
+				"removeChildren": [
+					"CapsuleVolume_NOM_GravityCrystal"
+				],
+				"position": {
+					"x": 0,
+					"y": 4,
+					"z": 0
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 180
+				}
 			}
 		],
 		"singularities": [
@@ -43,11 +75,11 @@
 				"isRelativeToParent": true,
 				"position": {
 					"x": 0,
-					"y": 7,
+					"y": 6,
 					"z": 0
 				},
-				"horizonRadius": 1,
-				"distortRadius": 2.5,
+				"horizonRadius": 0.5,
+				"distortRadius": 1.25,
 				"hasWarpEffects": false,
 				"type": "blackHole",
 				"uniqueID": "PuzzleRoomSignalScope_Socket0_Active"
@@ -57,11 +89,11 @@
 				"isRelativeToParent": true,
 				"position": {
 					"x": 0,
-					"y": 7,
+					"y": 6,
 					"z": 0
 				},
-				"horizonRadius": 1,
-				"distortRadius": 2.5,
+				"horizonRadius": 0.5,
+				"distortRadius": 1.25,
 				"hasWarpEffects": false,
 				"type": "whiteHole",
 				"uniqueID": "PuzzleRoomSignalScope_Socket0_Inactive"
@@ -71,11 +103,11 @@
 				"isRelativeToParent": true,
 				"position": {
 					"x": 0,
-					"y": 7,
+					"y": 6,
 					"z": 0
 				},
-				"horizonRadius": 1,
-				"distortRadius": 2.5,
+				"horizonRadius": 0.5,
+				"distortRadius": 1.25,
 				"hasWarpEffects": false,
 				"type": "blackHole",
 				"uniqueID": "PuzzleRoomSignalScope_Socket1_Active"
@@ -85,11 +117,11 @@
 				"isRelativeToParent": true,
 				"position": {
 					"x": 0,
-					"y": 7,
+					"y": 6,
 					"z": 0
 				},
-				"horizonRadius": 1,
-				"distortRadius": 2.5,
+				"horizonRadius": 0.5,
+				"distortRadius": 1.25,
 				"hasWarpEffects": false,
 				"type": "whiteHole",
 				"uniqueID": "PuzzleRoomSignalScope_Socket1_Inactive"
@@ -99,11 +131,11 @@
 				"isRelativeToParent": true,
 				"position": {
 					"x": 0,
-					"y": 7,
+					"y": 6,
 					"z": 0
 				},
-				"horizonRadius": 1,
-				"distortRadius": 2.5,
+				"horizonRadius": 0.5,
+				"distortRadius": 1.25,
 				"hasWarpEffects": false,
 				"type": "blackHole",
 				"uniqueID": "PuzzleRoomSignalScope_Socket2_Active"
@@ -113,11 +145,11 @@
 				"isRelativeToParent": true,
 				"position": {
 					"x": 0,
-					"y": 7,
+					"y": 6,
 					"z": 0
 				},
-				"horizonRadius": 1,
-				"distortRadius": 2.5,
+				"horizonRadius": 0.5,
+				"distortRadius": 1.25,
 				"hasWarpEffects": false,
 				"type": "whiteHole",
 				"uniqueID": "PuzzleRoomSignalScope_Socket2_Inactive"
@@ -127,11 +159,11 @@
 				"isRelativeToParent": true,
 				"position": {
 					"x": 0,
-					"y": 7,
+					"y": 6,
 					"z": 0
 				},
-				"horizonRadius": 1,
-				"distortRadius": 2.5,
+				"horizonRadius": 0.5,
+				"distortRadius": 1.25,
 				"hasWarpEffects": false,
 				"type": "blackHole",
 				"uniqueID": "PuzzleRoomSignalScope_Socket3_Active"
@@ -141,11 +173,11 @@
 				"isRelativeToParent": true,
 				"position": {
 					"x": 0,
-					"y": 7,
+					"y": 6,
 					"z": 0
 				},
-				"horizonRadius": 1,
-				"distortRadius": 2.5,
+				"horizonRadius": 0.5,
+				"distortRadius": 1.25,
 				"hasWarpEffects": false,
 				"type": "whiteHole",
 				"uniqueID": "PuzzleRoomSignalScope_Socket3_Inactive"
