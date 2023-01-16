@@ -6,7 +6,8 @@
 		"surfaceSize": 200,
 		"surfaceGravity": 0,
 		"hasMapMarker": true,
-		"ambientLight": 0.8
+		"ambientLight": 0.8,
+		"invulnerableToSun": true
 	},
 	"Orbit": {
 		"staticPosition": {
@@ -43,7 +44,13 @@
 		"details": [
 			{
 				"assetBundle": "assetbundles/puzzleship",
-				"path": "Assets/Mod Assets/Objects/PuzzleRoomSignalScope.prefab"
+				"path": "Assets/Mod Assets/Objects/PuzzleRoomSignalScope.prefab",
+				"keepLoaded": true
+			},
+			{
+				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/OrbitalControl/Prefab_NOM_Whiteboard_Shared/Props_NOM_Whiteboard_Shared",
+				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/VictoryRoomWhiteboard",
+				"isRelativeToParent": true
 			},
 			{
 				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/GravityFieldExhibit/Prefab_NOM_GravityCrystal",
@@ -68,11 +75,6 @@
 				"removeChildren": [
 					"CapsuleVolume_NOM_GravityCrystal"
 				]
-			},
-			{
-				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/OrbitalControl/Prefab_NOM_Whiteboard_Shared/Props_NOM_Whiteboard_Shared",
-				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/VictoryRoomWhiteboard",
-				"isRelativeToParent": true
 			}
 		],
 		"signals": [
@@ -90,7 +92,7 @@
 				"detectionRadius": 100,
 				"sourceRadius": 0.5,
 				"onlyAudibleToScope": true,
-				"audio": "Quantum Ambience_LP"
+				"audio": "QuantumAmbience_LP"
 			}
 		],
 		"singularities": [
