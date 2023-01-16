@@ -12,10 +12,33 @@
 	"Orbit": {
 		"staticPosition": {
 			"x": 0,
-			"y": 30200,
+			"y": 30000,
 			"z": 0
 		},
 		"isStatic": true
+	},
+	"Spawn": {
+		"playerSpawnPoint": {
+			"x": 0,
+			"y": 0,
+			"z": 25
+		},
+		"playerSpawnRotation": {
+			"x": 0,
+			"y": 180,
+			"z": 0
+		},
+		"startWithSuit": true,
+		"shipSpawnPoint": {
+			"x": 0,
+			"y": 15,
+			"z": 25
+		},
+		"shipSpawnRotation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		}
 	},
 	"Props": {
 		"details": [
