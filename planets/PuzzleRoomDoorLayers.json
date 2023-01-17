@@ -51,14 +51,6 @@
 				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/OrbitalControl/Prefab_NOM_Whiteboard_Shared/Props_NOM_Whiteboard_Shared",
 				"parentPath": "Sector/PuzzleRoomDoorLayers/Interactibles/VictoryRoomWhiteboard",
 				"isRelativeToParent": true
-			},
-			{
-				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/GravityFieldExhibit/Prefab_NOM_GravityCrystal",
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Interactibles/GravityCrystal",
-				"isRelativeToParent": true,
-				"removeChildren": [
-					"CapsuleVolume_NOM_GravityCrystal"
-				]
 			}
 		],
 		"signals": [

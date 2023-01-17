@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        canvas {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // lengths: 1-9
+        // six rows tall
+        // four options on left, four options on right
+
+        const leftColors = [
+            'hsl(0 50% 50%)',
+            'hsl(20 50% 50%)',
+            'hsl(40 50% 50%)',
+            'hsl(60 50% 50%)',
+        ]
+
+        const rightColors = [
+            'hsl(180 50% 50%)',
+            'hsl(200 50% 50%)',
+            'hsl(220 50% 50%)',
+            'hsl(240 50% 50%)',
+        ]
+
+        const left = [
+            [3,7,6,7,5,7],
+            [6,7,8,5,5,5],
+            [4,8,6,6,4,3],
+            [1,4,4,5,7,8],
+        ]
+
+        const right = [
+            [8,5,4,2,5,3],
+            [4,7,3,5,4,5],
+            [8,4,4,6,6,8],
+            [7,8,5,4,5,6],
+        ]
+
+        const TILES_X = 9
+        const TILES_Y = 6
+        const TILE_SIZE = 32
+
+        let leftColorIndex = 0
+        for (const l of left) {
+            for (const r of right) {
+                const canvas = document.createElement('canvas')
+                canvas.width = TILES_X * TILE_SIZE
+                canvas.height = TILES_Y * TILE_SIZE
+                document.body.append(canvas)
+                const ctx = canvas.getContext('2d')
+
+                ctx.fillStyle = 'black'
+                ctx.lineWidth = 4
+                ctx.globalAlpha = 0.75
+
+                for (let y = 0; y < 6; y++) {
+                    ctx.fillRect(0, y * TILE_SIZE, l[y] * TILE_SIZE, TILE_SIZE)
+                    ctx.fillRect((TILES_X - r[y]) * TILE_SIZE, y * TILE_SIZE, r[y] * TILE_SIZE, TILE_SIZE)
+                    ctx.strokeStyle = leftColors[left.indexOf(l)]
+                    ctx.strokeRect(0, y * TILE_SIZE, l[y] * TILE_SIZE, TILE_SIZE)
+                    ctx.strokeStyle = rightColors[right.indexOf(r)]
+                    ctx.strokeRect((TILES_X - r[y]) * TILE_SIZE, y * TILE_SIZE, r[y] * TILE_SIZE, TILE_SIZE)
+                }
+            }
+            document.body.append(document.createElement('br'))
+        }
+    </script>
+</body>
+</html>
