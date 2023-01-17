@@ -49,7 +49,32 @@
 			},
 			{
 				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/OrbitalControl/Prefab_NOM_Whiteboard_Shared/Props_NOM_Whiteboard_Shared",
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Interactibles/VictoryRoomWhiteboard",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Props/VictoryRoomWhiteboard",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/OrbitalControl/Prefab_NOM_Whiteboard_Shared/Props_NOM_Whiteboard_Shared",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Props/FakeWhiteboard",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_1",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Props/Tree",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Props/Tree (1)",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Props/Tree (2)",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_3",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Props/Tree (3)",
 				"isRelativeToParent": true
 			}
 		],
@@ -59,7 +84,7 @@
 				"isRelativeToParent": true,
 				"position": {
 					"x": 0,
-					"y": 0.5,
+					"y": -0.5,
 					"z": 0
 				},
 				"frequency": "Quantum",
@@ -75,7 +100,7 @@
 				"isRelativeToParent": true,
 				"position": {
 					"x": 0,
-					"y": 0.5,
+					"y": -0.5,
 					"z": 0
 				},
 				"frequency": "Quantum",
