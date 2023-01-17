@@ -26,32 +26,28 @@
 			},
 			{
 				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/OrbitalControl/Prefab_NOM_Whiteboard_Shared/Props_NOM_Whiteboard_Shared",
-				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/VictoryRoomWhiteboard",
+				"parentPath": "Sector/PuzzleRoomSignalScope/Props/VictoryRoomWhiteboard",
 				"isRelativeToParent": true
 			},
 			{
-				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/GravityFieldExhibit/Prefab_NOM_GravityCrystal",
-				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/GravityCrystalBottom",
-				"isRelativeToParent": true,
-				"removeChildren": [
-					"CapsuleVolume_NOM_GravityCrystal"
-				]
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_1",
+				"parentPath": "Sector/PuzzleRoomSignalScope/Props/Tree",
+				"isRelativeToParent": true
 			},
 			{
-				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/GravityFieldExhibit/Prefab_NOM_GravityCrystal",
-				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/GravityCrystalMiddle",
-				"isRelativeToParent": true,
-				"removeChildren": [
-					"CapsuleVolume_NOM_GravityCrystal"
-				]
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2",
+				"parentPath": "Sector/PuzzleRoomSignalScope/Props/Tree (1)",
+				"isRelativeToParent": true
 			},
 			{
-				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/GravityFieldExhibit/Prefab_NOM_GravityCrystal",
-				"parentPath": "Sector/PuzzleRoomSignalScope/Interactibles/GravityCrystalTop",
-				"isRelativeToParent": true,
-				"removeChildren": [
-					"CapsuleVolume_NOM_GravityCrystal"
-				]
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2",
+				"parentPath": "Sector/PuzzleRoomSignalScope/Props/Tree (2)",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_3",
+				"parentPath": "Sector/PuzzleRoomSignalScope/Props/Tree (3)",
+				"isRelativeToParent": true
 			}
 		],
 		"signals": [
