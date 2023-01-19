@@ -154,6 +154,12 @@ public class BuildModFiles
             var name = Path.GetFileName(path);
             Copy(Path.Combine(Path.Combine(rootDirectory, "planets"), name), Path.Combine(modOutputDirectory, "planets", name));
         }
+        Directory.CreateDirectory(Path.Combine(modOutputDirectory, "planets/towers"));
+        foreach (var path in Directory.EnumerateFiles(Path.Combine(rootDirectory, "planets/towers")))
+        {
+            var name = Path.GetFileName(path);
+            Copy(Path.Combine(Path.Combine(rootDirectory, "planets/towers"), name), Path.Combine(modOutputDirectory, "planets/towers", name));
+        }
         Directory.CreateDirectory(Path.Combine(modOutputDirectory, "systems"));
         foreach (var path in Directory.EnumerateFiles(Path.Combine(rootDirectory, "systems")))
         {
