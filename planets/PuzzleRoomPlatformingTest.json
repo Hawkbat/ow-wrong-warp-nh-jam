@@ -1,0 +1,78 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name" : "Puzzle Room (Platforming) Test",
+	"Base": {
+		"groundSize": 0,
+		"surfaceSize": 200,
+		"surfaceGravity": 0,
+		"hasMapMarker": true,
+		"ambientLight": 0.8,
+		"invulnerableToSun": true
+	},
+	"Orbit": {
+		"staticPosition": {
+			"x": 0,
+			"y": 30042,
+			"z": -1000
+		},
+		"isStatic": true
+	},
+	"Props": {
+		"details": [
+			{
+				"assetBundle": "assetbundles/puzzleship",
+				"path": "Assets/Mod Assets/Objects/PuzzleRoomPlatforming.prefab",
+				"keepLoaded": true
+			},
+			{
+				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/OrbitalControl/Prefab_NOM_Whiteboard_Shared/Props_NOM_Whiteboard_Shared",
+				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Props/VictoryRoomWhiteboard",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_1",
+				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Props/Tree",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2",
+				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Props/Tree (1)",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2",
+				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Props/Tree (2)",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_3",
+				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Props/Tree (3)",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_1",
+				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Props/Tree (4)",
+				"isRelativeToParent": true
+			}
+		],
+		"signals": [
+			{
+				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Interactibles/Quantum Platform 0",
+				"isRelativeToParent": true,
+				"position": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"frequency": "Quantum",
+				"name": "Quantum Platform",
+				"identificationRadius": 10,
+				"detectionRadius": 100,
+				"sourceRadius": 0.5,
+				"onlyAudibleToScope": true,
+				"audio": "QuantumAmbience_LP"
+			}
+		],
+		"singularities": []
+	}
+}
