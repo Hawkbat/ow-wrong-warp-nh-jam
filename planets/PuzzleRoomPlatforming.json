@@ -71,6 +71,52 @@
 				"sourceRadius": 0.5,
 				"onlyAudibleToScope": true,
 				"audio": "QuantumAmbience_LP"
+			},
+			{
+				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Interactibles/Quantum Platform 1",
+				"isRelativeToParent": true,
+				"position": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"frequency": "Quantum",
+				"name": "Quantum Platform",
+				"identificationRadius": 10,
+				"detectionRadius": 100,
+				"sourceRadius": 0.5,
+				"onlyAudibleToScope": true,
+				"audio": "QuantumAmbience_LP"
+			},
+			{
+				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Interactibles/Quantum Platform 2",
+				"isRelativeToParent": true,
+				"position": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"frequency": "Quantum",
+				"name": "Quantum Platform",
+				"identificationRadius": 10,
+				"detectionRadius": 100,
+				"sourceRadius": 0.5,
+				"onlyAudibleToScope": true,
+				"audio": "QuantumAmbience_LP"
+			}
+		],
+		"nomaiText": [
+			{
+				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Props/GuideText",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 1, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"type": "wall",
+				"seed": 30,
+				"xmlFile": "planets/TEXT_PLATFORM_PUZZLE_GUIDE.xml",
+				"arcInfo": [
+					{"type": "adult", "position": { "x": 0, "y": 0 }}
+				]
 			}
 		],
 		"singularities": []

@@ -112,8 +112,8 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
         const singularityJson = {
             "parentPath": parentPath,
             "isRelativeToParent": true,
-            "horizonRadius": 0.5,
-            "distortRadius": 0.75,
+            "horizonRadius": 0.75,
+            "distortRadius": 1.5,
             "type": singularityType,
             "hasWarpEffects": false,
             "uniqueID": uniqueID,

@@ -68,6 +68,33 @@
 				"audio": "QuantumAmbience_LP"
 			}
 		],
+		"nomaiText": [
+			{
+				"parentPath": "Sector/PuzzleRoomSignalScope/Pivot/Props/HintText",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 1, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"type": "wall",
+				"seed": 11,
+				"xmlFile": "planets/TEXT_SIGNAL_PUZZLE_HINT.xml",
+				"arcInfo": [
+					{"type": "adult", "position": { "x": 0, "y": 0 }},
+					{"type": "adult", "position": { "x": 0.35, "y": 1 }, "zRotation": 230 }
+				]
+			},
+			{
+				"parentPath": "Sector/PuzzleRoomSignalScope/Pivot/Props/GuideText",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 1, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"type": "wall",
+				"seed": 10,
+				"xmlFile": "planets/TEXT_SIGNAL_PUZZLE_GUIDE.xml",
+				"arcInfo": [
+					{"type": "adult", "position": { "x": 0, "y": 0 }, "mirror": true }
+				]
+			}
+		],
 		"singularities": [
 			{
 				"parentPath": "Sector/PuzzleRoomSignalScope/Pivot/Interactibles/VictoryRoomWhiteHole",

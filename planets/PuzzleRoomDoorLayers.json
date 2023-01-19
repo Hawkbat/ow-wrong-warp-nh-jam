@@ -61,7 +61,7 @@
 				"isRelativeToParent": true,
 				"position": {
 					"x": 0,
-					"y": -0.5,
+					"y": 0,
 					"z": 0
 				},
 				"frequency": "Quantum",
@@ -77,7 +77,7 @@
 				"isRelativeToParent": true,
 				"position": {
 					"x": 0,
-					"y": -0.5,
+					"y": 0,
 					"z": 0
 				},
 				"frequency": "Quantum",
@@ -87,6 +87,33 @@
 				"sourceRadius": 0.5,
 				"onlyAudibleToScope": true,
 				"audio": "QuantumAmbience_LP"
+			}
+		],
+		"nomaiText": [
+			{
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/FakeWhiteboard",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 1, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"type": "wall",
+				"seed": 21,
+				"xmlFile": "planets/TEXT_DOOR_PUZZLE_FAKE.xml",
+				"arcInfo": [
+					{"type": "adult", "position": { "x": 0, "y": 0 }},
+					{"type": "adult", "position": { "x": 0.3, "y": 0.75 }, "zRotation": 45, "mirror": true }
+				]
+			},
+			{
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/GuideText",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 1, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"type": "wall",
+				"seed": 20,
+				"xmlFile": "planets/TEXT_DOOR_PUZZLE_GUIDE.xml",
+				"arcInfo": [
+					{"type": "adult", "position": { "x": 0, "y": 0 }}
+				]
 			}
 		],
 		"singularities": []
