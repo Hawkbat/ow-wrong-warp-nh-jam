@@ -1,0 +1,94 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name" : "Puzzle Room (Door Layers) Test",
+	"Base": {
+		"groundSize": 0,
+		"surfaceSize": 200,
+		"surfaceGravity": 0,
+		"hasMapMarker": true,
+		"ambientLight": 0.8,
+		"invulnerableToSun": true
+	},
+	"Orbit": {
+		"staticPosition": {
+			"x": 0,
+			"y": 30021,
+			"z": -1000
+		},
+		"isStatic": true
+	},
+	"Props": {
+		"details": [
+			{
+				"assetBundle": "assetbundles/puzzleship",
+				"path": "Assets/Mod Assets/Objects/PuzzleRoomDoorLayers.prefab",
+				"keepLoaded": true
+			},
+			{
+				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/OrbitalControl/Prefab_NOM_Whiteboard_Shared/Props_NOM_Whiteboard_Shared",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/VictoryRoomWhiteboard",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/OrbitalControl/Prefab_NOM_Whiteboard_Shared/Props_NOM_Whiteboard_Shared",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/FakeWhiteboard",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_1",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/Tree",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/Tree (1)",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/Tree (2)",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_3",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/Tree (3)",
+				"isRelativeToParent": true
+			}
+		],
+		"signals": [
+			{
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Interactibles/Quantum Ball 0",
+				"isRelativeToParent": true,
+				"position": {
+					"x": 0,
+					"y": -0.5,
+					"z": 0
+				},
+				"frequency": "Quantum",
+				"name": "Quantum Orb",
+				"identificationRadius": 10,
+				"detectionRadius": 100,
+				"sourceRadius": 0.5,
+				"onlyAudibleToScope": true,
+				"audio": "QuantumAmbience_LP"
+			},
+			{
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Interactibles/Quantum Ball 1",
+				"isRelativeToParent": true,
+				"position": {
+					"x": 0,
+					"y": -0.5,
+					"z": 0
+				},
+				"frequency": "Quantum",
+				"name": "Quantum Orb",
+				"identificationRadius": 10,
+				"detectionRadius": 100,
+				"sourceRadius": 0.5,
+				"onlyAudibleToScope": true,
+				"audio": "QuantumAmbience_LP"
+			}
+		],
+		"singularities": []
+	}
+}

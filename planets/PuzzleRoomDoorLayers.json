@@ -11,34 +11,11 @@
 	},
 	"Orbit": {
 		"staticPosition": {
-			"x": 0,
-			"y": 30000,
-			"z": 0
+			"x": 1000,
+			"y": 30021,
+			"z": -1000
 		},
 		"isStatic": true
-	},
-	"Spawn": {
-		"playerSpawnPoint": {
-			"x": 0,
-			"y": 0,
-			"z": 25
-		},
-		"playerSpawnRotation": {
-			"x": 0,
-			"y": 180,
-			"z": 0
-		},
-		"startWithSuit": true,
-		"shipSpawnPoint": {
-			"x": 0,
-			"y": 15,
-			"z": 25
-		},
-		"shipSpawnRotation": {
-			"x": 0,
-			"y": 0,
-			"z": 0
-		}
 	},
 	"Props": {
 		"details": [
@@ -49,38 +26,38 @@
 			},
 			{
 				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/OrbitalControl/Prefab_NOM_Whiteboard_Shared/Props_NOM_Whiteboard_Shared",
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Props/VictoryRoomWhiteboard",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/VictoryRoomWhiteboard",
 				"isRelativeToParent": true
 			},
 			{
 				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/OrbitalControl/Prefab_NOM_Whiteboard_Shared/Props_NOM_Whiteboard_Shared",
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Props/FakeWhiteboard",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/FakeWhiteboard",
 				"isRelativeToParent": true
 			},
 			{
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_1",
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Props/Tree",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/Tree",
 				"isRelativeToParent": true
 			},
 			{
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2",
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Props/Tree (1)",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/Tree (1)",
 				"isRelativeToParent": true
 			},
 			{
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2",
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Props/Tree (2)",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/Tree (2)",
 				"isRelativeToParent": true
 			},
 			{
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_3",
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Props/Tree (3)",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/Tree (3)",
 				"isRelativeToParent": true
 			}
 		],
 		"signals": [
 			{
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Interactibles/Quantum Ball 0",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Interactibles/Quantum Ball 0",
 				"isRelativeToParent": true,
 				"position": {
 					"x": 0,
@@ -96,7 +73,7 @@
 				"audio": "QuantumAmbience_LP"
 			},
 			{
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Interactibles/Quantum Ball 1",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Interactibles/Quantum Ball 1",
 				"isRelativeToParent": true,
 				"position": {
 					"x": 0,
