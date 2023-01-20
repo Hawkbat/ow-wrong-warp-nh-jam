@@ -1,0 +1,44 @@
+
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "name": "Timber Hearth",
+    "Props": {
+        "details": [
+			{
+				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/OrbitalControl/Prefab_NOM_Whiteboard_Shared/Props_NOM_Whiteboard_Shared",
+                "parentPath": "Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/NomaiStatueExhibit",
+                "isRelativeToParent": true,
+                "position": {
+                    "x": 1,
+                    "y": 0,
+                    "z": -4.5
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                }
+			}
+        ],
+        "nomaiText": [
+            {
+				"parentPath": "Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/NomaiStatueExhibit/Props_NOM_Whiteboard_Shared",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 0.5, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"type": "wall",
+                "location": "a",
+				"seed": 1,
+				"xmlFile": "planets/TEXT_TIMBER_HEARTH_WALL.xml",
+				"arcInfo": [
+					{"type": "adult", "position": { "x": 0.25, "y": 0 } },
+					{"type": "adult", "position": { "x": 0.25, "y": 0.4 }, "zRotation": 90 },
+					{"type": "adult", "position": { "x": 1.25, "y": 0.8 }, "zRotation": 330 },
+					{"type": "adult", "position": { "x": -0.25, "y": 1.25 }, "zRotation": 15 },
+					{"type": "adult", "position": { "x": -0.5, "y": 1.7 }, "zRotation": 300, "mirror": true }
+				]                
+            }
+        ]
+    }
+
+}

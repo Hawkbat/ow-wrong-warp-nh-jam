@@ -17,7 +17,23 @@
                 "type": "blackHole",
                 "hasWarpEffects": false,
                 "uniqueID": "TOWER_WARP_ENTRY",
-                "targetStarSystem": "QuantumTowerRealm"
+                "targetStarSystem": "QuantumTowerRealm",
+                "curve": [
+                    { "time": 0.00, "value": 0.001 },
+                    { "time": 2.75, "value": 0.001 },
+                    { "time": 2.80, "value": 0.2 },
+                    { "time": 4.15, "value": 0.2 },
+                    { "time": 4.20, "value": 0.001 },
+                    { "time": 9.35, "value": 0.001 },
+                    { "time": 9.40, "value": 0.2 },
+                    { "time": 10.75, "value": 0.2 },
+                    { "time": 10.80, "value": 0.001 },
+                    { "time": 16.00, "value": 0.001 },
+                    { "time": 16.05, "value": 0.2 },
+                    { "time": 17.40, "value": 0.2 },
+                    { "time": 17.45, "value": 0.001 },
+                    { "time": 24.00, "value": 0.001 }
+                ]
             }
         ]
     }
