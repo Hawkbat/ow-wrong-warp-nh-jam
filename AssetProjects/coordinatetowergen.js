@@ -157,6 +157,7 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
     const json = {
         "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
         "name" : name,
+        "starSystem": "QuantumTowerRealm",
         "Base": {
             "groundSize": 0,
             "surfaceSize": 10,

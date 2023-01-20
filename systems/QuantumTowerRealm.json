@@ -1,0 +1,8 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
+    "canEnterViaWarpDrive": false,
+    "destroyStockPlanets": true,
+    "enableTimeLoop": false,
+    "mapRestricted": true,
+    "respawnHere": true
+}
