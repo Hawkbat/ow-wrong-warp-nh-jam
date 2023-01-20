@@ -18,7 +18,7 @@
 				<DialogueTarget>2</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>I'll see you later.</Text>
+				<Text>I'll see you around.</Text>
 				<DialogueTarget>3</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
@@ -27,7 +27,7 @@
 	<DialogueNode>
 		<Name>1</Name>
 		<Dialogue>
-			<Page>If you're a huge fan, why aren't you moving the air around you?</Page>
+			<Page>If you're a huge fan, why aren't you blowing air at me?</Page>
 			<Page>Haha that's a joke. I'm working on my standup comedy routine.</Page>
 		</Dialogue>
 		<DialogueOptionsList>
@@ -45,7 +45,7 @@
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>Uhh, that doesn't make any--</Text>
+				<Text>That doesn't make any sens--</Text>
 				<DialogueTarget>3</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>

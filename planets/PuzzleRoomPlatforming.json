@@ -56,56 +56,7 @@
 				"isRelativeToParent": true
 			}
 		],
-		"signals": [
-			{
-				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Interactibles/Quantum Platform 0",
-				"isRelativeToParent": true,
-				"position": {
-					"x": 0,
-					"y": 0,
-					"z": 0
-				},
-				"frequency": "Quantum",
-				"name": "Quantum Platform",
-				"identificationRadius": 10,
-				"detectionRadius": 100,
-				"sourceRadius": 0.5,
-				"onlyAudibleToScope": true,
-				"audio": "QuantumAmbience_LP"
-			},
-			{
-				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Interactibles/Quantum Platform 1",
-				"isRelativeToParent": true,
-				"position": {
-					"x": 0,
-					"y": 0,
-					"z": 0
-				},
-				"frequency": "Quantum",
-				"name": "Quantum Platform",
-				"identificationRadius": 10,
-				"detectionRadius": 100,
-				"sourceRadius": 0.5,
-				"onlyAudibleToScope": true,
-				"audio": "QuantumAmbience_LP"
-			},
-			{
-				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Interactibles/Quantum Platform 2",
-				"isRelativeToParent": true,
-				"position": {
-					"x": 0,
-					"y": 0,
-					"z": 0
-				},
-				"frequency": "Quantum",
-				"name": "Quantum Platform",
-				"identificationRadius": 10,
-				"detectionRadius": 100,
-				"sourceRadius": 0.5,
-				"onlyAudibleToScope": true,
-				"audio": "QuantumAmbience_LP"
-			}
-		],
+		"signals": [],
 		"nomaiText": [
 			{
 				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Props/GuideText",

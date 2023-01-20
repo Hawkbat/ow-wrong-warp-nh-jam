@@ -71,6 +71,18 @@
 		],
 		"nomaiText": [
 			{
+				"parentPath": "Sector/PuzzleRoomSignalScope/Pivot/Props/CoordReminderText",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 1, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"type": "wall",
+				"seed": 12,
+				"xmlFile": "planets/TEXT_SIGNAL_PUZZLE_COORD_REMINDER.xml",
+				"arcInfo": [
+					{"type": "adult", "position": { "x": 0, "y": 0 }}
+				]
+			},
+			{
 				"parentPath": "Sector/PuzzleRoomSignalScope/Pivot/Props/HintText",
 				"isRelativeToParent": true,
 				"position": { "x": 0, "y": 1, "z": 0 },

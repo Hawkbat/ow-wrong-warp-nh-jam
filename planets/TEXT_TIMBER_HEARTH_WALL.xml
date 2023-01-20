@@ -8,24 +8,24 @@
 		<ID>2</ID>
 		<ParentID>1</ParentID>
 		<LocationB />
-		<Text>MITIS: I am willing to assist. However, I am unaware of the procedure for reaching Quercus' craft.</Text>
+		<Text>MITIS: I am willing to assist! However, I am unaware of the procedure for reaching Quercus' craft. You say a shuttle launch is required?</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>1</ParentID>
-		<LocationA />
-		<Text>YARROW: I hope he makes good use of those components he "borrowed." If we are not able to complete the <![CDATA[<color=orange>Ash Twin Project</color>]]>, at least the technologies we developed will see some use.</Text>
+		<LocationB />
+		<Text>YARROW: I hope Quercus is making good use of those components he "borrowed." If we are not able to complete the <![CDATA[<color=orange>Ash Twin Project</color>]]>, at least the technologies we developed there may reach another Nomai clan some day.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>2</ParentID>
 		<LocationA />
-		<Text>POKE: You <![CDATA[<i>are</i>]]> familiar with the workings of the Ash Twin warp towers, correct? The warp to Quercus' craft follows the same principle, only the alignment is between <![CDATA[<color=lightblue>Brittle Hollow</color>]]> and <![CDATA[<color=lightblue>White Hole Station</color>]]>. As long as you launch your shuttle within that window, you will arrive there safely.</Text>
+		<Text>POKE: Yes! The warp to Quercus' craft activates based on proximity between the largest white hole and black hole in this system. As long as you activate the gravity cannon when they are at their closest point, your shuttle will arrive there safely.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>5</ID>
 		<ParentID>4</ParentID>
-		<LocationB />
-		<Text>CLARY: To be technically correct (the best kind of correct), the alignment is with Quercus' craft itself, not with <![CDATA[<color=lightblue>White Hole Station</color>]]>. With how far he has traveled, the window should be fairly forgiving (about a minute or so).</Text>
+		<LocationA />
+		<Text>CLARY: To be technically correct (the best kind of correct), the alignment is also with Quercus' craft itself, not just with <![CDATA[<color=lightblue>White Hole Station</color>]]>'s singularity. With how far he has traveled, the window should be fairly forgiving (about a minute or so).</Text>
 	</TextBlock>
 </NomaiObject>

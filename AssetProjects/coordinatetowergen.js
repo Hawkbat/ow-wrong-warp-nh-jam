@@ -49,7 +49,7 @@ function getTargetSingularityID(direction, floorIndex, coordSetIndex, coordIndex
             direction === TowerType.forward ? currentSet.indexOf(coord) === currentSet.length - 1 :
             direction === TowerType.reverse ? currentSet.indexOf(coord) === 0 :
             false
-    if (isFinalCoord) return getSingularityID(TowerType.base, floorIndex + 1, coordSetIndex + 1, -1, -1)
+    if (isFinalCoord) return getSingularityID(TowerType.base, floorIndex, coordSetIndex + 1, -1, -1)
     if (direction === TowerType.forward) return getSingularityID(direction, floorIndex, coordSetIndex, coordIndex + 1, -1)
     if (direction === TowerType.reverse) return getSingularityID(direction, floorIndex, coordSetIndex, (coordIndex < 0 ? currentSet.length - 1 : coordIndex - 1), -1)
     return undefined
@@ -73,8 +73,8 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
     const singularities = []
 
     for (let i = -1; i < 6; i++) {
-        if (!isCurrentFloor) break
         const isEntrance = i === -1
+        if (!isCurrentFloor && !isEntrance) continue
         
         const isReverseCoord =
             type === TowerType.base ? i === currentSet[currentSet.length - 1] :
@@ -154,6 +154,21 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
         }
     } : undefined
 
+    const details = []
+    details.push({
+        "assetBundle": "assetbundles/puzzleship",
+        "path": "Assets/Mod Assets/Objects/TowerCenter.prefab"
+    })
+    for (let i = 0; i <= coordSetIndex; i ++) {
+        if (i === coordSetIndex && coordIndex < 0) continue
+        details.push({
+            "parentPath": `Sector/TowerCenter/Props/Coordinate Sigil ${i}`,
+            "isRelativeToParent": true,
+            "assetBundle": "assetbundles/puzzleship",
+            "path": `Assets/Mod Assets/Textures/Coordinates/Objects/COORD_${type === TowerType.reverse ? 'R' : 'F'}_S${i}_C${coordSetIndex > i ? type === coordinateSets[i].length - 1 : coordIndex}.prefab`
+        })
+    }
+
     const json = {
         "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
         "name" : name,
@@ -180,12 +195,7 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
             "showOrbitLine": false
         },
         "Props": {
-            "details": [
-                {
-                    "assetBundle": "assetbundles/puzzleship",
-                    "path": "Assets/Mod Assets/Objects/TowerCenter.prefab"
-                }
-            ],
+            "details": details,
             "singularities": singularities,
         }
     }

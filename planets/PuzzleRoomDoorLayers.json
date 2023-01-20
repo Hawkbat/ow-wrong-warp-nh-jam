@@ -82,40 +82,7 @@
 				"pathToAnimController": "Sector/PuzzleRoomDoorLayers/Pivot/Interactibles/Ernesto/Ernesto"
 			}
 		],
-		"signals": [
-			{
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Interactibles/Quantum Ball 0",
-				"isRelativeToParent": true,
-				"position": {
-					"x": 0,
-					"y": 0,
-					"z": 0
-				},
-				"frequency": "Quantum",
-				"name": "Quantum Orb",
-				"identificationRadius": 10,
-				"detectionRadius": 100,
-				"sourceRadius": 0.5,
-				"onlyAudibleToScope": true,
-				"audio": "QuantumAmbience_LP"
-			},
-			{
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Interactibles/Quantum Ball 1",
-				"isRelativeToParent": true,
-				"position": {
-					"x": 0,
-					"y": 0,
-					"z": 0
-				},
-				"frequency": "Quantum",
-				"name": "Quantum Orb",
-				"identificationRadius": 10,
-				"detectionRadius": 100,
-				"sourceRadius": 0.5,
-				"onlyAudibleToScope": true,
-				"audio": "QuantumAmbience_LP"
-			}
-		],
+		"signals": [],
 		"nomaiText": [
 			{
 				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/FakeWhiteboard",
