@@ -53,6 +53,32 @@
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_3",
 				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/Tree (3)",
 				"isRelativeToParent": true
+			},
+			{
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Interactibles/Ernesto",
+				"isRelativeToParent": true,
+				"path": "Anglerfish_Body/Beast_Anglerfish",
+				"scale" : 0.02,
+				"removeChildren" :[
+					"B_angler_root/B_angler_body01/B_angler_body02/B_angler_antenna01/B_angler_antenna02/B_angler_antenna03/B_angler_antenna04/B_angler_antenna05/B_angler_antenna06/B_angler_antenna07/B_angler_antenna08/B_angler_antenna09/B_angler_antenna10/B_angler_antenna11/B_angler_antenna12_end"
+				],
+				"rename": "Ernesto"
+			},
+			{
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Interactibles/Ernesto/Ernesto",
+				"isRelativeToParent": true,
+				"path" : "Anglerfish_Body/Beast_Anglerfish_Collision",
+				"scale" : 0.02,
+				"rename": "ErnestoCollision"
+			}
+		],
+		"dialogue": [
+			{
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Interactibles/Ernesto",
+				"isRelativeToParent": true,
+				"xmlFile" : "planets/DIALOGUE_ERNESTO.xml",
+				"radius": 1.5,
+				"pathToAnimController": "Sector/PuzzleRoomDoorLayers/Pivot/Interactibles/Ernesto/Ernesto"
 			}
 		],
 		"signals": [
