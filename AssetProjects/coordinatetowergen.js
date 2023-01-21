@@ -132,8 +132,8 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
             const direction = isForwardCoord ? TowerType.forward : isReverseCoord ? TowerType.reverse : TowerType.base
     
             const parentPath = isEntrance ?
-                `Sector/TowerCenter/Interactibles/BlackHoleEntrance` :
-                `Sector/TowerCenter/Interactibles/BlackHolePivot${i}/BlackHole`
+                `Sector/TowerCenterFloor${floorIndex}/Interactibles/BlackHoleEntrance` :
+                `Sector/TowerCenterFloor${floorIndex}/Interactibles/BlackHolePivot${i}/BlackHole`
             const singularityType = isPrevCoord || isCurrentCoord || isEntrance ? 'whiteHole' : 'blackHole'        
             const uniqueID = getSingularityID(type, floorIndex, coordSetIndex, coordIndex, i)
             const pairedSingularity = isNextCoord ? getTargetSingularityID(direction, floorIndex, coordSetIndex, coordIndex, i) : undefined
@@ -159,30 +159,6 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
             singularities.push(singularityJson)
         }
     }
-
-    const spawnJson = (isInitialFloor) ? {
-        "playerSpawnPoint": {
-            "x": 0,
-            "y": 2,
-            "z": 0
-        },
-        "playerSpawnRotation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-        },
-        "startWithSuit": true,
-        "shipSpawnPoint": {
-            "x": 0,
-            "y": -50000,
-            "z": 0
-        },
-        "shipSpawnRotation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-        }
-    } : undefined
 
     const details = []
     const nomaiText = []
@@ -266,12 +242,18 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
     } else {
         details.push({
             "assetBundle": "assetbundles/puzzleship",
-            "path": "Assets/Mod Assets/Objects/TowerCenter.prefab"
+            "path": `Assets/Mod Assets/Objects/TowerCenterFloor${floorIndex}.prefab`
         })
         if (!isCurrentFloor || type !== TowerType.base) {
             details.push({
                 "assetBundle": "assetbundles/puzzleship",
-                "path": "Assets/Mod Assets/Objects/TowerRoomPlug.prefab"
+                "path": "Assets/Mod Assets/Objects/TowerRoomPlugLeft.prefab"
+            })
+        }
+        if (!isInitialFloor) {
+            details.push({
+                "assetBundle": "assetbundles/puzzleship",
+                "path": "Assets/Mod Assets/Objects/TowerRoomPlugRight.prefab"
             })
         }
     }
@@ -279,7 +261,7 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
         for (let i = 0; i <= coordSetIndex; i ++) {
             if (i === coordSetIndex && coordIndex < 0) continue
             details.push({
-                "parentPath": `Sector/TowerCenter/Props/Coordinate Sigil ${i}`,
+                "parentPath": `Sector/TowerCenterFloor${floorIndex}/Props/Coordinate Sigil ${i}`,
                 "isRelativeToParent": true,
                 "assetBundle": "assetbundles/puzzleship",
                 "path": `Assets/Mod Assets/Textures/Coordinates/Objects/COORD_${i === coordSetIndex && type === TowerType.reverse ? 'R' : 'F'}_S${i}_C${i < coordSetIndex ? coordinateSets[i].length - 1 : coordIndex}.prefab`
@@ -330,7 +312,6 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
         "ReferenceFrame": {
             "enabled": false
         },
-        "Spawn": spawnJson,
         "Orbit": {
             "staticPosition": {
                 "x": x,

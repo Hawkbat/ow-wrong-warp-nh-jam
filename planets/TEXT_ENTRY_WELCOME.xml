@@ -1,0 +1,6 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>Welcome to my <![CDATA[<color=orange>Arcanum</color>]]>. Here I invite all sentient beings, Nomai or otherwise, to share in our knowledge. Each layer of this tower will bring you closer to quantum enlightenment.</Text>
+	</TextBlock>
+</NomaiObject>
