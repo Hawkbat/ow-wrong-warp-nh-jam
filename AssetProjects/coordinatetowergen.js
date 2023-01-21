@@ -266,6 +266,12 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
             "assetBundle": "assetbundles/puzzleship",
             "path": "Assets/Mod Assets/Objects/TowerCenter.prefab"
         })
+        if (!isCurrentFloor || type !== TowerType.base) {
+            details.push({
+                "assetBundle": "assetbundles/puzzleship",
+                "path": "Assets/Mod Assets/Objects/TowerRoomPlug.prefab"
+            })
+        }
     }
     if (!isTowerPeak) {
         for (let i = 0; i <= coordSetIndex; i ++) {
