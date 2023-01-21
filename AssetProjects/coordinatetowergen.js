@@ -69,6 +69,7 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
     if (type === TowerType.base) console.log({ name, x, y, z })
 
     const currentSet = coordinateSets[floorIndex]
+    const isInitialFloor = type === TowerType.base && floorIndex === 0 && coordSetIndex === 0
     const isTowerPeak = floorIndex === 3
     const isCurrentFloor = coordSetIndex === floorIndex
     const isPreviousFloor = coordSetIndex > floorIndex
@@ -159,7 +160,7 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
         }
     }
 
-    const spawnJson = (type === TowerType.base && floorIndex === 0 && coordSetIndex === 0) ? {
+    const spawnJson = (isInitialFloor) ? {
         "playerSpawnPoint": {
             "x": 0,
             "y": 2,
@@ -185,6 +186,7 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
 
     const details = []
     const nomaiText = []
+    const audioVolumes = []
     if (isTowerPeak) {
         details.push({
             "assetBundle": "assetbundles/puzzleship",
@@ -284,7 +286,36 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
             })
         }
     }
-
+    if (isCurrentFloor) {
+        if (isInitialFloor) {
+            audioVolumes.push({
+                "audio": "BH_Observatory",
+                "track": "music",
+                "radius": 100
+            })
+        } else if (isTowerPeak) {
+            audioVolumes.push({
+                "audio": "DB_VesselDiscovery",
+                "track": "music",
+                "radius": 100
+            })
+        } else {
+            audioVolumes.push({
+                "audio": "NomaiRuinsBaseTrack",
+                "track": "music",
+                "radius": 100
+            })
+        }
+        if (type === TowerType.base && !isInitialFloor) {
+            audioVolumes.push({
+                "audio": "NomaiVesselPowerUp",
+                "track": "environmentUnfiltered",
+                "radius": 100,
+                "loop": false
+            })
+        }
+    }
+    
     const json = {
         "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
         "name" : name,
@@ -314,7 +345,10 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
             "details": details,
             "singularities": singularities,
             "nomaiText": nomaiText,
-        }
+        },       
+        "Volumes": {
+            "audioVolumes": audioVolumes,
+        },
     }
 
     fs.writeFileSync(path.join(baseDir, `${name}.json`), JSON.stringify(json), 'utf8')

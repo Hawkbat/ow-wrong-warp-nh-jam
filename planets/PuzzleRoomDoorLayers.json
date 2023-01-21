@@ -114,5 +114,16 @@
 			}
 		],
 		"singularities": []
+	},
+	"Volumes": {
+		"audioVolumes": [
+			{
+				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Interactibles/Ernesto",
+				"isRelativeToParent": true,
+				"audio": "KazooTheme",
+				"loop": true,
+				"radius": 5
+			}
+		]
 	}
 }
