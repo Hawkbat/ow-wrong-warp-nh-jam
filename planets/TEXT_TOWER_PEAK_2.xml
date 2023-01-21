@@ -1,0 +1,6 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>By passing the trials I have constructed, you have demonstrated a willingness to learn about macro-quantum behavior. Using our knowledge, I believe you will be equipped to some day locate the <![CDATA[<color=lightblue>Eye</color>]]> and unravel its secrets.</Text>
+	</TextBlock>
+</NomaiObject>

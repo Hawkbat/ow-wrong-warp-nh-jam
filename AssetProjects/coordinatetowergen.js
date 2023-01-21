@@ -20,7 +20,7 @@ const TowerType = {
 const singularityMap = {}
 const singularityPairMap = {}
 
-let buildIndex = coordinateSets.reduce((p, c) => p + (1 + c.length * 2) * 3, 0) - 1
+let buildIndex = 4 + coordinateSets.reduce((p, c) => p + (1 + c.length * 2) * 4, 0) - 1
 
 for (let s = 0; s < coordinateSets.length; s++) {
     makeTowerPlanets(TowerType.base, s, -1)
@@ -31,11 +31,13 @@ for (let s = 0; s < coordinateSets.length; s++) {
         makeTowerPlanets(TowerType.reverse, s, c)
     }
 }
+makeTowerPlanets(TowerType.base, coordinateSets.length, -1)
 
 function makeTowerPlanets(type, coordSetIndex, coordIndex) {
     makeTowerPlanet(type, coordSetIndex, coordIndex, 0)
     makeTowerPlanet(type, coordSetIndex, coordIndex, 1)
     makeTowerPlanet(type, coordSetIndex, coordIndex, 2)
+    makeTowerPlanet(type, coordSetIndex, coordIndex, 3)
 }
 
 function getSingularityID(type, floorIndex, coordSetIndex, coordIndex, coord) {
@@ -49,6 +51,8 @@ function getTargetSingularityID(direction, floorIndex, coordSetIndex, coordIndex
             direction === TowerType.forward ? currentSet.indexOf(coord) === currentSet.length - 1 :
             direction === TowerType.reverse ? currentSet.indexOf(coord) === 0 :
             false
+    const isWarpToFinalFloor = isFinalCoord && coordSetIndex === coordinateSets.length - 1 && floorIndex === 2
+    if (isWarpToFinalFloor) return getSingularityID(TowerType.base, floorIndex + 1, coordSetIndex + 1, -1, -1)
     if (isFinalCoord) return getSingularityID(TowerType.base, floorIndex, coordSetIndex + 1, -1, -1)
     if (direction === TowerType.forward) return getSingularityID(direction, floorIndex, coordSetIndex, coordIndex + 1, -1)
     if (direction === TowerType.reverse) return getSingularityID(direction, floorIndex, coordSetIndex, (coordIndex < 0 ? currentSet.length - 1 : coordIndex - 1), -1)
@@ -65,69 +69,94 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
     if (type === TowerType.base) console.log({ name, x, y, z })
 
     const currentSet = coordinateSets[floorIndex]
+    const isTowerPeak = floorIndex === 3
     const isCurrentFloor = coordSetIndex === floorIndex
     const isPreviousFloor = coordSetIndex > floorIndex
 
-    const siderealPeriod = (isPreviousFloor ? [1, -1, 1.5][floorIndex] : 0)
+    const siderealPeriod = (isPreviousFloor ? [1, -0.8, 1.5, -1.2][floorIndex] : 0)
 
     const singularities = []
 
-    for (let i = -1; i < 6; i++) {
-        const isEntrance = i === -1
-        if (!isCurrentFloor && !isEntrance) continue
-        
-        const isReverseCoord =
-            type === TowerType.base ? i === currentSet[currentSet.length - 1] :
-            type === TowerType.reverse ? true :
-            false
-
-        const isForwardCoord =
-            type === TowerType.base ? i === currentSet[0] :
-            type === TowerType.forward ? true :
-            false
-
-        const isCurrentCoord = i === currentSet[coordIndex]
-
-        const isPrevCoord =
-            type === TowerType.base ? isPreviousFloor :
-            type === TowerType.forward ? isPreviousFloor || (isCurrentFloor && currentSet.includes(i) && currentSet.indexOf(i) < coordIndex) :
-            type === TowerType.reverse ? isPreviousFloor || (isCurrentFloor && currentSet.includes(i) && currentSet.indexOf(i) > coordIndex) :
-            false
-        
-        const isNextCoord =
-            type === TowerType.base ? isCurrentFloor && (i === currentSet[0] || i === currentSet[currentSet.length - 1]) :
-            type === TowerType.forward ? isCurrentFloor && i === currentSet[coordIndex + 1] :
-            type === TowerType.reverse ? isCurrentFloor && i === currentSet[coordIndex - 1] :
-            false
-
-        const direction = isForwardCoord ? TowerType.forward : isReverseCoord ? TowerType.reverse : TowerType.base
-
-        const parentPath = isEntrance ?
-            `Sector/TowerCenter/Interactibles/BlackHoleEntrance` :
-            `Sector/TowerCenter/Interactibles/BlackHolePivot${i}/BlackHole`
-        const singularityType = isPrevCoord || isCurrentCoord || isEntrance ? 'whiteHole' : 'blackHole'        
-        const uniqueID = getSingularityID(type, floorIndex, coordSetIndex, coordIndex, i)
-        const pairedSingularity = isNextCoord ? getTargetSingularityID(direction, floorIndex, coordSetIndex, coordIndex, i) : undefined
-
-        const singularityJson = {
-            "parentPath": parentPath,
-            "isRelativeToParent": true,
-            "horizonRadius": 0.75,
-            "distortRadius": 1.5,
-            "type": singularityType,
-            "hasWarpEffects": false,
-            "uniqueID": uniqueID,
-            "pairedSingularity": pairedSingularity
+    if (isTowerPeak) {
+        if (isCurrentFloor) {
+            singularities.push({
+                "parentPath": `Sector/TowerPeak/Interactibles/BlackHoleEntrance`,
+                "isRelativeToParent": true,
+                "horizonRadius": 0.75,
+                "distortRadius": 1.5,
+                "type": "whiteHole",
+                "hasWarpEffects": false,
+                "uniqueID": getSingularityID(type, floorIndex, coordSetIndex, coordIndex, -1),
+            })
+            singularities.push({
+                "parentPath": `Sector/TowerPeak/Interactibles/BlackHoleExit`,
+                "isRelativeToParent": true,
+                "horizonRadius": 2,
+                "distortRadius": 5,
+                "type": "blackHole",
+                "hasWarpEffects": false,
+                "targetStarSystem": "SolarSystem",
+                "uniqueID": "TOWER_WARP_EXIT",
+            })
         }
-
-        if (singularityMap[uniqueID]) {
-            console.log('Duplicate singularity', uniqueID)
+    } else {
+        for (let i = -1; i < 6; i++) {
+            const isEntrance = i === -1
+            if (!isCurrentFloor && !isEntrance) continue
+            
+            const isReverseCoord =
+                type === TowerType.base ? i === currentSet[currentSet.length - 1] :
+                type === TowerType.reverse ? true :
+                false
+    
+            const isForwardCoord =
+                type === TowerType.base ? i === currentSet[0] :
+                type === TowerType.forward ? true :
+                false
+    
+            const isCurrentCoord = i === currentSet[coordIndex]
+    
+            const isPrevCoord =
+                type === TowerType.base ? isPreviousFloor :
+                type === TowerType.forward ? isPreviousFloor || (isCurrentFloor && currentSet.includes(i) && currentSet.indexOf(i) < coordIndex) :
+                type === TowerType.reverse ? isPreviousFloor || (isCurrentFloor && currentSet.includes(i) && currentSet.indexOf(i) > coordIndex) :
+                false
+            
+            const isNextCoord =
+                type === TowerType.base ? isCurrentFloor && (i === currentSet[0] || i === currentSet[currentSet.length - 1]) :
+                type === TowerType.forward ? isCurrentFloor && i === currentSet[coordIndex + 1] :
+                type === TowerType.reverse ? isCurrentFloor && i === currentSet[coordIndex - 1] :
+                false
+    
+            const direction = isForwardCoord ? TowerType.forward : isReverseCoord ? TowerType.reverse : TowerType.base
+    
+            const parentPath = isEntrance ?
+                `Sector/TowerCenter/Interactibles/BlackHoleEntrance` :
+                `Sector/TowerCenter/Interactibles/BlackHolePivot${i}/BlackHole`
+            const singularityType = isPrevCoord || isCurrentCoord || isEntrance ? 'whiteHole' : 'blackHole'        
+            const uniqueID = getSingularityID(type, floorIndex, coordSetIndex, coordIndex, i)
+            const pairedSingularity = isNextCoord ? getTargetSingularityID(direction, floorIndex, coordSetIndex, coordIndex, i) : undefined
+    
+            const singularityJson = {
+                "parentPath": parentPath,
+                "isRelativeToParent": true,
+                "horizonRadius": 0.75,
+                "distortRadius": 1.5,
+                "type": singularityType,
+                "hasWarpEffects": false,
+                "uniqueID": uniqueID,
+                "pairedSingularity": pairedSingularity
+            }
+    
+            if (singularityMap[uniqueID]) {
+                console.log('Duplicate singularity', uniqueID)
+            }
+    
+            singularityMap[uniqueID] = singularityJson
+            if (pairedSingularity) singularityPairMap[uniqueID] = pairedSingularity
+            
+            singularities.push(singularityJson)
         }
-
-        singularityMap[uniqueID] = singularityJson
-        if (pairedSingularity) singularityPairMap[uniqueID] = pairedSingularity
-        
-        singularities.push(singularityJson)
     }
 
     const spawnJson = (type === TowerType.base && floorIndex === 0 && coordSetIndex === 0) ? {
@@ -144,7 +173,7 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
         "startWithSuit": true,
         "shipSpawnPoint": {
             "x": 0,
-            "y": -50,
+            "y": -50000,
             "z": 0
         },
         "shipSpawnRotation": {
@@ -155,18 +184,99 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
     } : undefined
 
     const details = []
-    details.push({
-        "assetBundle": "assetbundles/puzzleship",
-        "path": "Assets/Mod Assets/Objects/TowerCenter.prefab"
-    })
-    for (let i = 0; i <= coordSetIndex; i ++) {
-        if (i === coordSetIndex && coordIndex < 0) continue
+    const nomaiText = []
+    if (isTowerPeak) {
         details.push({
-            "parentPath": `Sector/TowerCenter/Props/Coordinate Sigil ${i}`,
-            "isRelativeToParent": true,
             "assetBundle": "assetbundles/puzzleship",
-            "path": `Assets/Mod Assets/Textures/Coordinates/Objects/COORD_${type === TowerType.reverse ? 'R' : 'F'}_S${i}_C${coordSetIndex > i ? type === coordinateSets[i].length - 1 : coordIndex}.prefab`
+            "path": "Assets/Mod Assets/Objects/TowerPeak.prefab"
         })
+        details.push({
+            "parentPath": "Sector/TowerPeak/Props/Quercus",
+            "isRelativeToParent": true,
+            "path": "Comet_Body/DeadNomai_Body/Prefab_NOM_Dead_Suit"
+        })
+        if (isCurrentFloor) {
+            nomaiText.push({
+                "parentPath": "Sector/TowerPeak/Props/Text Pivot 0/Text",
+                "isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+                "type": "wall",
+                "seed": 42,
+                "xmlFile": "planets/TEXT_TOWER_PEAK_0.xml",
+                "arcInfo": [
+					{"type": "adult", "position": { "x": 0, "y": 0 }}
+                ]
+            })
+            
+            nomaiText.push({
+                "parentPath": "Sector/TowerPeak/Props/Text Pivot 1/Text",
+                "isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+                "type": "wall",
+                "seed": 42,
+                "xmlFile": "planets/TEXT_TOWER_PEAK_1.xml",
+                "arcInfo": [
+					{"type": "adult", "position": { "x": 0, "y": 0 }}
+                ]
+            })
+            nomaiText.push({
+                "parentPath": "Sector/TowerPeak/Props/Text Pivot 2/Text",
+                "isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+                "type": "wall",
+                "seed": 42,
+                "xmlFile": "planets/TEXT_TOWER_PEAK_2.xml",
+                "arcInfo": [
+					{"type": "adult", "position": { "x": 0, "y": 0 }}
+                ]
+            })
+            nomaiText.push({
+                "parentPath": "Sector/TowerPeak/Props/Text Pivot 3/Text",
+                "isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+                "type": "wall",
+                "seed": 43,
+                "xmlFile": "planets/TEXT_TOWER_PEAK_3.xml",
+                "arcInfo": [
+					{"type": "adult", "position": { "x": 0, "y": 0 }},
+					{"type": "adult", "position": { "x": 0, "y": 1 }, "zRotation": 300 },
+					{"type": "adult", "position": { "x": 0.25, "y": 1.35 }, "zRotation": 75, "mirror": true },
+					{"type": "child", "position": { "x": 0.25, "y": 1.9 }}
+                ]
+            })
+            nomaiText.push({
+                "parentPath": "Sector/TowerPeak/Props/Text Pivot 4/Text",
+                "isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+                "type": "wall",
+                "seed": 44,
+                "xmlFile": "planets/TEXT_TOWER_PEAK_4.xml",
+                "arcInfo": [
+					{"type": "adult", "position": { "x": 0, "y": 0 }}
+                ]
+            })
+        }
+    } else {
+        details.push({
+            "assetBundle": "assetbundles/puzzleship",
+            "path": "Assets/Mod Assets/Objects/TowerCenter.prefab"
+        })
+    }
+    if (!isTowerPeak) {
+        for (let i = 0; i <= coordSetIndex; i ++) {
+            if (i === coordSetIndex && coordIndex < 0) continue
+            details.push({
+                "parentPath": `Sector/TowerCenter/Props/Coordinate Sigil ${i}`,
+                "isRelativeToParent": true,
+                "assetBundle": "assetbundles/puzzleship",
+                "path": `Assets/Mod Assets/Textures/Coordinates/Objects/COORD_${type === TowerType.reverse ? 'R' : 'F'}_S${i}_C${coordSetIndex > i ? coordinateSets[i].length - 1 : coordIndex}.prefab`
+            })
+        }
     }
 
     const json = {
@@ -177,7 +287,7 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
             "groundSize": 0,
             "surfaceSize": 10,
             "surfaceGravity": 0,
-            "hasMapMarker": true,
+            "hasMapMarker": false,
             "ambientLight": 0.8
         },
         "ReferenceFrame": {
@@ -197,6 +307,7 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
         "Props": {
             "details": details,
             "singularities": singularities,
+            "nomaiText": nomaiText,
         }
     }
 

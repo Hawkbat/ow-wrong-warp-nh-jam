@@ -1,0 +1,18 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>The resupply runs have stopped. What has become of the others? My food and water stores are limited. Is abandoning my mission and returning my only option?</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<Text>I created a makeshift sensor apparatus and sent it through the wormhole. I detected no signs of life. I hypothesize that something terrible has happened.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<Text>I have decided. I will not return through the wormhole and abandon my work. I will maintain this craft for as long as I am able.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<Text>I can hardly raise my staff any longer... If my life has ended, please, honor an old Nomai's final request: make use of my clan's knowledge. Discover the true nature of the Eye. Attain the enlightenment we could not.</Text>
+	</TextBlock>
+</NomaiObject>

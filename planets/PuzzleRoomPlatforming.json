@@ -6,9 +6,12 @@
 		"groundSize": 0,
 		"surfaceSize": 200,
 		"surfaceGravity": 0,
-		"hasMapMarker": true,
+		"hasMapMarker": false,
 		"ambientLight": 0.8,
 		"invulnerableToSun": true
+	},
+	"ReferenceFrame": {
+		"enabled": false
 	},
 	"Orbit": {
 		"staticPosition": {
