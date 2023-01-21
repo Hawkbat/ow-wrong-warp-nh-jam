@@ -266,6 +266,12 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
             "assetBundle": "assetbundles/puzzleship",
             "path": "Assets/Mod Assets/Objects/TowerCenter.prefab"
         })
+        if (!isCurrentFloor || type !== TowerType.base) {
+            details.push({
+                "assetBundle": "assetbundles/puzzleship",
+                "path": "Assets/Mod Assets/Objects/TowerRoomPlug.prefab"
+            })
+        }
     }
     if (!isTowerPeak) {
         for (let i = 0; i <= coordSetIndex; i ++) {
@@ -274,7 +280,7 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
                 "parentPath": `Sector/TowerCenter/Props/Coordinate Sigil ${i}`,
                 "isRelativeToParent": true,
                 "assetBundle": "assetbundles/puzzleship",
-                "path": `Assets/Mod Assets/Textures/Coordinates/Objects/COORD_${type === TowerType.reverse ? 'R' : 'F'}_S${i}_C${coordSetIndex > i ? coordinateSets[i].length - 1 : coordIndex}.prefab`
+                "path": `Assets/Mod Assets/Textures/Coordinates/Objects/COORD_${i === coordSetIndex && type === TowerType.reverse ? 'R' : 'F'}_S${i}_C${i < coordSetIndex ? coordinateSets[i].length - 1 : coordIndex}.prefab`
             })
         }
     }
