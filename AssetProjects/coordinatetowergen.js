@@ -63,7 +63,7 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
     const name = `Tower ${(buildIndex--).toString().padStart(3, '0')} ${type} S${coordSetIndex} C${coordIndex} F${[floorIndex]}`
 
     const x = (coordSetIndex * 1000)
-    const y = (type === TowerType.base ? 30000 : 20000) + (floorIndex * 21)
+    const y = (type === TowerType.base ? 30000 : 20000) + (floorIndex * 20)
     const z = (type === TowerType.reverse ? 10000 : 0) + (coordIndex * 1000)
 
     if (type === TowerType.base) console.log({ name, x, y, z })
