@@ -1,8 +1,8 @@
 {
   "filename": "NewHorizonsConfig.dll",
-  "author": "Hawkbar",
-  "name": "Wrong Warp NH Jam",
-  "uniqueName": "Hawkbar.WrongWarpNHJam",
+  "author": "Team Wrong Warp",
+  "name": "Arcanum Adrift",
+  "uniqueName": "Hawkbar.ArcanumAdrift",
   "version": "0.1.0",
   "owmlVersion": "2.7.2",
   "dependencies": [ "xen.NewHorizons" ]
