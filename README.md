@@ -8,6 +8,8 @@ Made for the 2023 New Horizons Jam.
 
 ## Known Issues
 
+Tag or message Hawkbar#4578 in the Outer Wilds Modding Discord with bug reports or questions!
+
 - Some sound effects are very loud. Turn down your headphones or speakers before playing.
 - Load times can be extremely slow.
 
