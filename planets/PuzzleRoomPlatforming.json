@@ -16,7 +16,7 @@
 	"Orbit": {
 		"staticPosition": {
 			"x": 2000,
-			"y": 30042,
+			"y": 30040,
 			"z": -1000
 		},
 		"isStatic": true
@@ -25,44 +25,43 @@
 		"details": [
 			{
 				"assetBundle": "assetbundles/puzzleship",
-				"path": "Assets/Mod Assets/Objects/PuzzleRoomPlatforming.prefab",
-				"keepLoaded": true
+				"path": "Assets/Mod Assets/Objects/PuzzleRoomPlatforming.prefab"
 			},
 			{
 				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/OrbitalControl/Prefab_NOM_Whiteboard_Shared/Props_NOM_Whiteboard_Shared",
-				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Props/VictoryRoomWhiteboard",
+				"parentPath": "Sector/PuzzleRoomPlatforming/TowerPivot/RoomPivot/Props/VictoryRoomWhiteboard",
 				"isRelativeToParent": true
 			},
 			{
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_1",
-				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Props/Tree",
+				"parentPath": "Sector/PuzzleRoomPlatforming/TowerPivot/RoomPivot/Props/Tree",
 				"isRelativeToParent": true
 			},
 			{
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2",
-				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Props/Tree (1)",
+				"parentPath": "Sector/PuzzleRoomPlatforming/TowerPivot/RoomPivot/Props/Tree (1)",
 				"isRelativeToParent": true
 			},
 			{
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2",
-				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Props/Tree (2)",
+				"parentPath": "Sector/PuzzleRoomPlatforming/TowerPivot/RoomPivot/Props/Tree (2)",
 				"isRelativeToParent": true
 			},
 			{
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_3",
-				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Props/Tree (3)",
+				"parentPath": "Sector/PuzzleRoomPlatforming/TowerPivot/RoomPivot/Props/Tree (3)",
 				"isRelativeToParent": true
 			},
 			{
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_1",
-				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Props/Tree (4)",
+				"parentPath": "Sector/PuzzleRoomPlatforming/TowerPivot/RoomPivot/Props/Tree (4)",
 				"isRelativeToParent": true
 			}
 		],
 		"signals": [],
 		"nomaiText": [
 			{
-				"parentPath": "Sector/PuzzleRoomPlatforming/Pivot/Props/GuideText",
+				"parentPath": "Sector/PuzzleRoomPlatforming/TowerPivot/RoomPivot/Props/GuideText",
 				"isRelativeToParent": true,
 				"position": { "x": 0, "y": 1, "z": 0 },
 				"rotation": { "x": 0, "y": 0, "z": 0 },

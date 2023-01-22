@@ -16,7 +16,7 @@
 	"Orbit": {
 		"staticPosition": {
 			"x": 1000,
-			"y": 30021,
+			"y": 30020,
 			"z": -1000
 		},
 		"isStatic": true
@@ -25,41 +25,40 @@
 		"details": [
 			{
 				"assetBundle": "assetbundles/puzzleship",
-				"path": "Assets/Mod Assets/Objects/PuzzleRoomDoorLayers.prefab",
-				"keepLoaded": true
+				"path": "Assets/Mod Assets/Objects/PuzzleRoomDoorLayers.prefab"
 			},
 			{
 				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/OrbitalControl/Prefab_NOM_Whiteboard_Shared/Props_NOM_Whiteboard_Shared",
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/VictoryRoomWhiteboard",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/TowerPivot/RoomPivot/Props/VictoryRoomWhiteboard",
 				"isRelativeToParent": true
 			},
 			{
 				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/OrbitalControl/Prefab_NOM_Whiteboard_Shared/Props_NOM_Whiteboard_Shared",
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/FakeWhiteboard",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/TowerPivot/RoomPivot/Props/FakeWhiteboard",
 				"isRelativeToParent": true
 			},
 			{
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_1",
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/Tree",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/TowerPivot/RoomPivot/Props/Tree",
 				"isRelativeToParent": true
 			},
 			{
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2",
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/Tree (1)",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/TowerPivot/RoomPivot/Props/Tree (1)",
 				"isRelativeToParent": true
 			},
 			{
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2",
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/Tree (2)",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/TowerPivot/RoomPivot/Props/Tree (2)",
 				"isRelativeToParent": true
 			},
 			{
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_3",
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/Tree (3)",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/TowerPivot/RoomPivot/Props/Tree (3)",
 				"isRelativeToParent": true
 			},
 			{
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Interactibles/Ernesto",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/TowerPivot/RoomPivot/Interactibles/Ernesto",
 				"isRelativeToParent": true,
 				"path": "Anglerfish_Body/Beast_Anglerfish",
 				"scale" : 0.02,
@@ -69,7 +68,7 @@
 				"rename": "Ernesto"
 			},
 			{
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Interactibles/Ernesto/Ernesto",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/TowerPivot/RoomPivot/Interactibles/Ernesto/Ernesto",
 				"isRelativeToParent": true,
 				"path" : "Anglerfish_Body/Beast_Anglerfish_Collision",
 				"scale" : 0.02,
@@ -78,17 +77,17 @@
 		],
 		"dialogue": [
 			{
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Interactibles/Ernesto",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/TowerPivot/RoomPivot/Interactibles/Ernesto",
 				"isRelativeToParent": true,
 				"xmlFile" : "planets/DIALOGUE_ERNESTO.xml",
 				"radius": 1.5,
-				"pathToAnimController": "Sector/PuzzleRoomDoorLayers/Pivot/Interactibles/Ernesto/Ernesto"
+				"pathToAnimController": "Sector/PuzzleRoomDoorLayers/TowerPivot/RoomPivot/Interactibles/Ernesto/Ernesto"
 			}
 		],
 		"signals": [],
 		"nomaiText": [
 			{
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/FakeWhiteboard",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/TowerPivot/RoomPivot/Props/FakeWhiteboard",
 				"isRelativeToParent": true,
 				"position": { "x": 0, "y": 1, "z": 0 },
 				"rotation": { "x": 0, "y": 0, "z": 0 },
@@ -101,7 +100,7 @@
 				]
 			},
 			{
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Props/GuideText",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/TowerPivot/RoomPivot/Props/GuideText",
 				"isRelativeToParent": true,
 				"position": { "x": 0, "y": 1, "z": 0 },
 				"rotation": { "x": 0, "y": 0, "z": 0 },
@@ -118,7 +117,7 @@
 	"Volumes": {
 		"audioVolumes": [
 			{
-				"parentPath": "Sector/PuzzleRoomDoorLayers/Pivot/Interactibles/Ernesto",
+				"parentPath": "Sector/PuzzleRoomDoorLayers/TowerPivot/RoomPivot/Interactibles/Ernesto",
 				"isRelativeToParent": true,
 				"audio": "KazooTheme",
 				"loop": true,
