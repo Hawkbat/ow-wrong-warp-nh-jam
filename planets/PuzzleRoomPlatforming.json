@@ -56,7 +56,19 @@
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_1",
 				"parentPath": "Sector/PuzzleRoomPlatforming/TowerPivot/RoomPivot/Props/Tree (4)",
 				"isRelativeToParent": true
-			}
+			},
+            {
+                "path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Interactables_Crossroads/Prefab_HEA_FuelTank",
+                "parentPath": "Sector/PuzzleRoomPlatforming/TowerPivot/RoomPivot/Interactibles/FuelTank",
+                "isRelativeToParent": true,
+                "position": { "x": 0, "y": 0.75, "z": 0 }
+            },
+            {
+                "path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Interactables_Crossroads/Prefab_HEA_FuelTank",
+                "parentPath": "Sector/PuzzleRoomPlatforming/TowerPivot/RoomPivot/Interactibles/FuelTank (1)",
+                "isRelativeToParent": true,
+                "position": { "x": 0, "y": 0.75, "z": 0 }
+            }
 		],
 		"signals": [],
 		"nomaiText": [

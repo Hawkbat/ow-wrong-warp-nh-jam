@@ -136,7 +136,7 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
                 `Sector/TowerCenterFloor${floorIndex}/Interactibles/BlackHolePivot${i}/BlackHole`
             const singularityType = isPrevCoord || isCurrentCoord || isEntrance ? 'whiteHole' : 'blackHole'        
             const uniqueID = getSingularityID(type, floorIndex, coordSetIndex, coordIndex, i)
-            const pairedSingularity = isNextCoord ? getTargetSingularityID(direction, floorIndex, coordSetIndex, coordIndex, i) : undefined
+            const pairedSingularity = isNextCoord ? getTargetSingularityID(direction, floorIndex, coordSetIndex, coordIndex, i) : singularityType === 'blackHole' ? "TOWER_FAILURE_WHITE_HOLE" : undefined
     
             const singularityJson = {
                 "parentPath": parentPath,
@@ -335,7 +335,7 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
     fs.writeFileSync(path.join(baseDir, `${name}.json`), JSON.stringify(json), 'utf8')
 }
 
-const unpaired = Object.fromEntries(Object.entries(singularityPairMap).filter(([k, v]) => !singularityMap[v]))
+const unpaired = Object.fromEntries(Object.entries(singularityPairMap).filter(([k, v]) => v !== "TOWER_FAILURE_WHITE_HOLE" && !singularityMap[v]))
 
 if (Object.keys(unpaired).length) {
     console.log('Unpaired singularities')

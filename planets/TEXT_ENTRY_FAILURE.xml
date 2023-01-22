@@ -1,0 +1,14 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>Incorrect data entry detected. Beginning recovery process...</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<Text>Resetting data entry state...</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<Text>Complete. Tower re-entry now permitted.</Text>
+	</TextBlock>
+</NomaiObject>

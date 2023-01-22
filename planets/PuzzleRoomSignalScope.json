@@ -137,6 +137,7 @@
 				"distortRadius": 1.25,
 				"hasWarpEffects": false,
 				"type": "blackHole",
+				"pairedSingularity": "TOWER_FAILURE_WHITE_HOLE",
 				"uniqueID": "PuzzleRoomSignalScope_Socket0_Inactive"
 			},
 			{
@@ -156,6 +157,7 @@
 				"distortRadius": 1.25,
 				"hasWarpEffects": false,
 				"type": "blackHole",
+				"pairedSingularity": "TOWER_FAILURE_WHITE_HOLE",
 				"uniqueID": "PuzzleRoomSignalScope_Socket1_Inactive"
 			},
 			{
@@ -175,6 +177,7 @@
 				"distortRadius": 1.25,
 				"hasWarpEffects": false,
 				"type": "blackHole",
+				"pairedSingularity": "TOWER_FAILURE_WHITE_HOLE",
 				"uniqueID": "PuzzleRoomSignalScope_Socket2_Inactive"
 			},
 			{
@@ -194,6 +197,7 @@
 				"distortRadius": 1.25,
 				"hasWarpEffects": false,
 				"type": "blackHole",
+				"pairedSingularity": "TOWER_FAILURE_WHITE_HOLE",
 				"uniqueID": "PuzzleRoomSignalScope_Socket3_Inactive"
 			}
 		]

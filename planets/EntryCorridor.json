@@ -60,7 +60,13 @@
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2",
 				"parentPath": "Sector/EntryCorridor/TowerPivot/RoomPivot/Props/Tree (1)",
 				"isRelativeToParent": true
-			}
+			},
+            {
+                "path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Interactables_Crossroads/Prefab_HEA_FuelTank",
+                "parentPath": "Sector/EntryCorridor/TowerPivot/RoomPivot/Interactibles/FuelTank",
+                "isRelativeToParent": true,
+                "position": { "x": 0, "y": 0.75, "z": 0 }
+            }
 		],
 		"nomaiText": [
 			{
@@ -76,6 +82,18 @@
 				]
 			},
 			{
+				"parentPath": "Sector/EntryCorridor/TowerPivot/RoomPivot/Props/FuelTankText",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": 0 },
+                "normal": { "x": 0, "y": 1, "z": 0 },
+				"type": "recorder",
+				"seed": 93,
+				"xmlFile": "planets/TEXT_ENTRY_FUEL_TANK.xml",
+				"arcInfo": [
+					{"type": "adult", "position": { "x": 0, "y": 0 }}
+				]
+			},
+			{
 				"parentPath": "Sector/EntryCorridor/TowerPivot/RoomPivot/Props/WelcomeText",
 				"isRelativeToParent": true,
 				"position": { "x": 0, "y": 1, "z": 0 },
@@ -86,7 +104,50 @@
 				"arcInfo": [
 					{"type": "adult", "position": { "x": 0, "y": 0 }}
 				]
+			},
+			{
+				"parentPath": "Sector/EntryCorridor/TowerPivot/RoomPivot/Props/FailureText",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 0, "z": 0 },
+                "normal": { "x": 0, "y": 1, "z": 0 },
+				"type": "computer",
+				"seed": 92,
+				"xmlFile": "planets/TEXT_ENTRY_FAILURE.xml",
+				"arcInfo": [
+					{"type": "adult", "position": { "x": 0, "y": 0 }}
+				]
 			}
-		]
+		],
+        "singularities": [
+            {
+				"parentPath": "Sector/EntryCorridor/TowerPivot/RoomPivot/Interactibles/EntryWhiteHole",
+				"isRelativeToParent": true,
+				"horizonRadius": 0.5,
+				"distortRadius": 1.25,
+				"hasWarpEffects": false,
+				"type": "whiteHole",
+				"uniqueID": "TOWER_ENTRY_WHITE_HOLE",
+                "pairedSingularity": "TOWER_FAILURE_BLACK_HOLE"
+            },
+            {
+				"parentPath": "Sector/EntryCorridor/TowerPivot/RoomPivot/Interactibles/FailureBlackHole",
+				"isRelativeToParent": true,
+				"horizonRadius": 0.5,
+				"distortRadius": 1.25,
+				"hasWarpEffects": false,
+				"type": "blackHole",
+				"uniqueID": "TOWER_FAILURE_BLACK_HOLE",
+                "pairedSingularity": "TOWER_ENTRY_WHITE_HOLE"
+            },
+            {
+				"parentPath": "Sector/EntryCorridor/TowerPivot/RoomPivot/Interactibles/FailureWhiteHole",
+				"isRelativeToParent": true,
+				"horizonRadius": 0.5,
+				"distortRadius": 1.25,
+				"hasWarpEffects": false,
+				"type": "whiteHole",
+				"uniqueID": "TOWER_FAILURE_WHITE_HOLE"
+            }
+        ]
 	}
 }
