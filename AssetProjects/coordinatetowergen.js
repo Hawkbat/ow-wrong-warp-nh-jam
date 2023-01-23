@@ -74,6 +74,8 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
     const isCurrentFloor = coordSetIndex === floorIndex
     const isPreviousFloor = coordSetIndex > floorIndex
 
+    const floorSuffix = isPreviousFloor ? '-Anim' : ''
+
     const siderealPeriod = (isPreviousFloor ? [1, -0.8, 1.5, -1.2][floorIndex] : 0)
 
     const singularities = []
@@ -132,8 +134,8 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
             const direction = isForwardCoord ? TowerType.forward : isReverseCoord ? TowerType.reverse : TowerType.base
     
             const parentPath = isEntrance ?
-                `Sector/TowerCenterFloor${floorIndex}/Interactibles/BlackHoleEntrance` :
-                `Sector/TowerCenterFloor${floorIndex}/Interactibles/BlackHolePivot${i}/BlackHole`
+                `Sector/TowerCenterFloor${floorIndex}${floorSuffix}/Interactibles/BlackHoleEntrance` :
+                `Sector/TowerCenterFloor${floorIndex}${floorSuffix}/Interactibles/BlackHolePivot${i}/BlackHole`
             const singularityType = isPrevCoord || isCurrentCoord || isEntrance ? 'whiteHole' : 'blackHole'        
             const uniqueID = getSingularityID(type, floorIndex, coordSetIndex, coordIndex, i)
             const pairedSingularity = isNextCoord ? getTargetSingularityID(direction, floorIndex, coordSetIndex, coordIndex, i) : singularityType === 'blackHole' ? "TOWER_FAILURE_WHITE_HOLE" : undefined
@@ -242,7 +244,7 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
     } else {
         details.push({
             "assetBundle": "assetbundles/puzzleship",
-            "path": `Assets/Mod Assets/Objects/TowerCenterFloor${floorIndex}.prefab`
+            "path": `Assets/Mod Assets/Objects/TowerCenterFloor${floorIndex}${floorSuffix}.prefab`
         })
         if (!isCurrentFloor || type !== TowerType.base) {
             details.push({
@@ -261,7 +263,7 @@ function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
         for (let i = 0; i <= coordSetIndex; i ++) {
             if (i === coordSetIndex && coordIndex < 0) continue
             details.push({
-                "parentPath": `Sector/TowerCenterFloor${floorIndex}/Props/Coordinate Sigil ${i}`,
+                "parentPath": `Sector/TowerCenterFloor${floorIndex}${floorSuffix}/Props/Coordinate Sigil ${i}`,
                 "isRelativeToParent": true,
                 "assetBundle": "assetbundles/puzzleship",
                 "path": `Assets/Mod Assets/Textures/Coordinates/Objects/COORD_${i === coordSetIndex && type === TowerType.reverse ? 'R' : 'F'}_S${i}_C${i < coordSetIndex ? coordinateSets[i].length - 1 : coordIndex}.prefab`
