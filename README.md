@@ -10,6 +10,7 @@ Made for the 2023 New Horizons Jam.
 
 Tag or message Hawkbar#4578 in the Outer Wilds Modding Discord with bug reports or questions!
 
+- You can sometimes fall through the floor after entering certain singularities.
 - Some sound effects are very loud. Turn down your headphones or speakers before playing.
 - Load times can be extremely slow.
 
