@@ -1,5 +1,62 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!95 &4974327397313179391
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3233525868102706063}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ed47142a9a7809b4e81ef030668c8343, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!95 &6234266045444249256
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675285378947222896}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ed47142a9a7809b4e81ef030668c8343, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!95 &6538143478840657561
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953090662561754687}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ed47142a9a7809b4e81ef030668c8343, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1849310252219281932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65,7 +122,7 @@ PrefabInstance:
     - target: {fileID: 1138595250725245078, guid: 0cfc30a688bd9ec47afdb3479ac09cf8,
         type: 3}
       propertyPath: m_Name
-      value: TowerCenter
+      value: TowerCenterFloor1
       objectReference: {fileID: 0}
     - target: {fileID: 2038547006405751536, guid: 0cfc30a688bd9ec47afdb3479ac09cf8,
         type: 3}
@@ -79,3 +136,21 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 16db0947081647b40946c6f052e89719, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cfc30a688bd9ec47afdb3479ac09cf8, type: 3}
+--- !u!1 &3233525868102706063 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3852226147618705795, guid: 0cfc30a688bd9ec47afdb3479ac09cf8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1849310252219281932}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &675285378947222896 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1221893427594968956, guid: 0cfc30a688bd9ec47afdb3479ac09cf8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1849310252219281932}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1953090662561754687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 193888414144437299, guid: 0cfc30a688bd9ec47afdb3479ac09cf8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1849310252219281932}
+  m_PrefabAsset: {fileID: 0}
