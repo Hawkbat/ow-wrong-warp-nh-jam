@@ -1,0 +1,80 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+  "UIDictionary": {
+    "Quantum Orb": "量子オーブ"
+  },
+  "DialogueDictionary": {
+    // TEXT_TIMBER_HEARTH_WALL
+    "POKE: If my time-keeping is correct, Quercus is expecting another resupply run. Is anyone on <![CDATA[<color=lightblue>Brittle Hollow</color>]]> available for a quick shuttle trip?": "POKE:私の時計が正しければ、Quercusはそろそろ次の補給を待っているはず。誰かすぐに<![CDATA[<color=lightblue>脆い空洞</color>]]>へシャトルで行けない？",
+    "MITIS: I am willing to assist! However, I am unaware of the procedure for reaching Quercus' craft. You say a shuttle launch is required?": "MITIS:喜んで手伝おう！だが、Quercusのクラフトにたどり着く方法を知らない。シャトルの打ち上げが必要なのか？",
+    "YARROW: I hope Quercus is making good use of those components he \"borrowed.\" If we are not able to complete the <![CDATA[<color=orange>Ash Twin Project</color>]]>, at least the technologies we developed there may reach another Nomai clan some day.": "YARROW:Quercusが借りた“部品”をうまく使ってくれていることを願うよ。もしも、仮に私たちが<![CDATA[<color=orange>灰の双子星プロジェクト</color>]]>を完遂することができなかったとしても、少なくともそこで私たちが開発した技術は他のNomaiの部族に届くかもしれない。",
+    "POKE: Yes! The warp to Quercus' craft activates based on proximity between the largest white hole and black hole in this system. As long as you activate the gravity cannon when they are at their closest point, your shuttle will arrive there safely.": "POKE:ええ！Quercusのクラフトへのワープは、この星系における最大のホワイトホールとブラックホールの間の近さに基づいて動作する。その2つが最も接近しているときに重力砲を作動させることさえすれば、シャトルは無事にそこに到着するわ。",
+    "CLARY: To be technically correct (the best kind of correct), the alignment is also with Quercus' craft itself, not just with <![CDATA[<color=lightblue>White Hole Station</color>]]>'s singularity. With how far he has traveled, the window should be fairly forgiving (about a minute or so).": "CLARY:技術的に正しいことを言うと(最も重要なことだけれど)、直列性は<![CDATA[<color=lightblue>ホワイトホールステーション</color>]]>の特異点だけでなく、Quercusのクラフト自体にも存在する。彼がどれだけの距離を移動したかを考えると、ワープ可能時間はかなり寛容であるべきよ(およそ1分ほど)。",
+
+    // TEXT_ENTRY_COMPUTER
+    "Detected approaching spacecraft. Waking from low-power state...": "宇宙船の接近を検知しました。スリープ状態から復帰しています…",
+    "One life sign detected. Opening wormhole...": "1つの生命体を検出しました。ワームホールを開いています…",
+    "One life form warped aboard.": "1つの生命体が乗船しました。",
+
+    // TEXT_ENTRY_FUEL_TANK
+    "MITIS: Quercus, I'm quite curious why you requested such highly volatile fluids. I must depart, but I will leave the delivery here. I would love to chat about your project sometime.": "MITIS:Quercus、なぜあなたはこのような可燃性の高い液体を要求しているのかとても不思議だ。私はもう出発するから、配達したものはここに置いておく。いつかあなたのプロジェクトについて色々聞いてみたいと思っている。",
+
+    // TEXT_ENTRY_WELCOME
+    "Welcome to my <![CDATA[<color=orange>Arcanum</color>]]>. Here I invite all sentient beings, Nomai or otherwise, to share in our knowledge. Each layer of this tower will bring you closer to quantum enlightenment.": "私の秘密のクラフトへようこそ。私はここに、Nomaiやその他のあらゆる生命を歓迎し、我らの知識を分かち合おう。この塔の各層はあなたを量子の悟りへと導くだろう。",
+
+    // TEXT_ENTRY_FAILURE
+    "Incorrect data entry detected. Beginning recovery process...": "不正なデータ入力が検出されました。復旧プロセスを開始しています…",
+    "Resetting data entry state...": "データ入力状態をリセットしています…",
+    "Complete. Tower re-entry now permitted.": "完了しました。塔への再乗船が許可されました。",
+
+    // TEXT_SIGNAL_PUZZLE_GUIDE
+    "The first coordinate has been hidden within this room. The quantum object shall reveal the true path.": "第1の座標はこの部屋に隠されている。量子のオブジェが真実の道を照らすだろう。",
+
+    // TEXT_SIGNAL_PUZZLE_HINT
+    "For help finding safe passage through the wormholes, recall the following lesson:": "ワームホールを安全に通過する術を見つけたければ、次の教訓を思い出せ:",
+    "Sight is not the only means by which we observe the universe.": "我々が宇宙を観察する手段は視覚だけではない。",
+
+    // TEXT_SIGNAL_PUZZLE_COORD_REMINDER
+    "Commit the coordinate to memory, or record its image using a device. You will need it.": "座標は記憶するか、機器を利用して記録しておくこと。これが必要となる。",
+
+    // TEXT_DOOR_PUZZLE_GUIDE
+    "The second coordinate lies directly ahead. Only two quantum objects prevent your passage.": "第2の座標は真正面にある。通過を阻むのは2つの量子オブジェのみだ。",
+
+    // TEXT_DOOR_PUZZLE_FAKE
+    "Often the answers we seek lie not in plain view.": "多くの場合、我々の探し求める答えは見えない場所にある。",
+    "However, all will be revealed to those with a curious mind.": "しかしながら、好奇心とともにある者にはすべてが明らかとなるであろう。",
+
+    // TEXT_PLATFORM_PUZZLE_GUIDE
+    "The third coordinate has been hidden here. Unlike us, the quantum objects here are not subjected to conventional antigravity.": "第3の座標はここに隠されている。我々と異なり、ここの量子オブジェは通常の反重力の影響を免れる。",
+
+    // TEXT_TOWER_PEAK_0
+    "The coordinates you have entered correspond to the system where my clan resides. Located there is an ancient anomaly we named <![CDATA[<color=lightblue>The Eye of the Universe</color>]]>.": "あなたが入力した座標は私の部族が住む星系と対応している。そこには我々が<![CDATA[<color=lightblue>宇宙の眼</color>]]>と名づけた太古の異常が存在する。",
+
+    // TEXT_TOWER_PEAK_1
+    "This craft's computer systems contains a complete database of all research I and my clan have conducted on the <![CDATA[<color=lightblue>Eye</color>]]> and the quantum macro-mechanics it exhibits.": "このクラフトのコンピュータシステムには、<![CDATA[<color=lightblue>眼</color>]]>およびそれが示す巨視的量子力学について、私と私の部族が取り組んできたすべての研究の完全なデータベースが保存されている。",
+
+    // TEXT_TOWER_PEAK_2
+    "By passing the trials I have constructed, you have demonstrated a willingness to learn about macro-quantum behavior. Using our knowledge, I believe you will be equipped to some day locate the <![CDATA[<color=lightblue>Eye</color>]]> and unravel its secrets.": "私の構築した試練に合格したことで、あなたは巨視的量子力学について学ぶ意欲を示してくれた。我々の知識を活用することで、いつの日か<![CDATA[<color=lightblue>眼</color>]]>の位置を特定し、その秘密を解き明かすことができるだろう。",
+
+    // TEXT_TOWER_PEAK_3
+    "The resupply runs have stopped. What has become of the others? My food and water stores are limited. Is abandoning my mission and returning my only option?": "補給が止まっている。他の者たちに何かあったのだろうか？食料も水も限られている。任務を放棄して帰還するしかないのか？",
+    "I created a makeshift sensor apparatus and sent it through the wormhole. I detected no signs of life. I hypothesize that something terrible has happened.": "間に合わせのセンサー装置を作り、ワームホールへと送った。一切の生命体が検出されなかった。何か恐ろしいことが起きてしまったのだろう。",
+    "I have decided. I will not return through the wormhole and abandon my work. I will maintain this craft for as long as I am able.": "私は決めた。ワームホールを通って任務を放棄することはしない。私が果てるまで、このクラフトを維持し続けよう。",
+    "I can hardly raise my staff any longer... If my life has ended, please, honor an old Nomai's final request: make use of my clan's knowledge. Discover the true nature of the Eye. Attain the enlightenment we could not.": "もはやつえを持ち上げることさえできない…。私の命が尽きたのなら、この老Nomaiの最後の頼みを、どうか聞き入れてほしい:私の部族の知識を役立ててほしい。眼の本質を発見してほしい。我々がたどり着けなかった悟りへ",
+
+    // TEXT_TOWER_PEAK_4
+    "The wormhole above will take you to my home system, where the Eye resides. You will not be able to return after traveling through it, so make your preparations.": "上のワームホールから、眼の存在する私の星系に行くことができる。そこを通り抜ければここに戻ることはできないため、心残りのないように。",
+
+    // DIALOGUE_ERNESTO
+    "Hey it's me Ernesto the magic talking anglerfish.": "やあ、魔法のおしゃべりアンコウのErnestoだよ。",
+    "Wow, the real Ernesto! I'm a huge fan!": "うわあ、本物のErnestoだ！大ファンなんだ！",
+    "How did you get here?": "どうやってここに？",
+    "I'll see you around.": "またね。",
+    "If you're a huge fan, why aren't you blowing air at me?": "大ファンならどうして私をあおがないんだろう？",
+    "Haha that's a joke. I'm working on my standup comedy routine.": "はは、ジョークだよ。スタンダップコメディをするのがルーチンなんだ。",
+    "Well played.": "なかなかよかったよ。",
+    "Uhh.... something something quantum, quantum quantum...": "ううう…量子の量子で量子ななんたらかんたら…",
+    "That doesn't make any sens--": "またナンセンスなことを―",
+    "Bye bye!": "バイバイ！"
+  }
+}
