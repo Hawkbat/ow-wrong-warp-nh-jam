@@ -58,6 +58,12 @@ public static class ModScripts
             var name = Path.GetFileName(path);
             Copy(Path.Combine(Path.Combine(rootDirectory, "systems"), name), Path.Combine(modOutputDirectory, "systems", name));
         }
+        Directory.CreateDirectory(Path.Combine(modOutputDirectory, "translations"));
+        foreach (var path in Directory.EnumerateFiles(Path.Combine(rootDirectory, "translations")))
+        {
+            var name = Path.GetFileName(path);
+            Copy(Path.Combine(Path.Combine(rootDirectory, "translations"), name), Path.Combine(modOutputDirectory, "translations", name));
+        }
     }
 
     static void Copy(string src, string dest)
