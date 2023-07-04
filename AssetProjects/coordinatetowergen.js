@@ -20,7 +20,7 @@ const TowerType = {
 const singularityMap = {}
 const singularityPairMap = {}
 
-let buildIndex = 4 + coordinateSets.reduce((p, c) => p + (1 + c.length * 2) * 4, 0) - 1
+let buildIndex = 0
 
 for (let s = 0; s < coordinateSets.length; s++) {
     makeTowerPlanets(TowerType.base, s, -1)
@@ -60,7 +60,7 @@ function getTargetSingularityID(direction, floorIndex, coordSetIndex, coordIndex
 }
 
 function makeTowerPlanet(type, coordSetIndex, coordIndex, floorIndex) {
-    const name = `Tower ${(buildIndex--).toString().padStart(3, '0')} ${type} S${coordSetIndex} C${coordIndex} F${[floorIndex]}`
+    const name = `Tower ${(buildIndex++).toString().padStart(3, '0')} ${type} S${coordSetIndex} C${coordIndex} F${[floorIndex]}`
 
     const x = (coordSetIndex * 1000)
     const y = (type === TowerType.base ? 30000 : 20000) + (floorIndex * 20)
