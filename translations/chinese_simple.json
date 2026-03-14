@@ -1,0 +1,81 @@
+{
+//该翻译补丁经检查没有任何问题。
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+  "UIDictionary": {
+    "Quantum Orb": "量子球体"
+  },
+  "DialogueDictionary": {
+    // TEXT_TIMBER_HEARTH_WALL
+    "POKE: If my time-keeping is correct, Quercus is expecting another resupply run. Is anyone on <![CDATA[<color=lightblue>Brittle Hollow</color>]]> available for a quick shuttle trip?": "波克：如果我的计时没错，奎尔库斯应该在等下一次补给了。<![CDATA[<color=lightblue>碎空星</color>]]>上有人能快速乘穿梭机去一趟吗？",
+    "MITIS: I am willing to assist! However, I am unaware of the procedure for reaching Quercus' craft. You say a shuttle launch is required?": "米蒂斯：我愿意帮忙！但我不知道怎么到达奎尔库斯的飞船。你是说需要发射穿梭机吗？",
+    "YARROW: I hope Quercus is making good use of those components he \"borrowed.\" If we are not able to complete the <![CDATA[<color=orange>Ash Twin Project</color>]]>, at least the technologies we developed there may reach another Nomai clan some day.": "亚罗：希望奎尔库斯能好好利用他“借”走的那些零件。要是我们没能完成<![CDATA[<color=orange>灰烬双星计划</color>]]>，至少我们在那研发的技术有朝一日或许能传到其他挪麦家族手中。",
+    "POKE: Yes! The warp to Quercus' craft activates based on proximity between the largest white hole and black hole in this system. As long as you activate the gravity cannon when they are at their closest point, your shuttle will arrive there safely.": "波克：没错！前往奎尔库斯飞船的跃迁会根据在这个星系中最大的白洞和黑洞之间的距离来激活。只要在它们距离最近时启动重力炮，你的穿梭机就能安全抵达。",
+    "CLARY: To be technically correct (the best kind of correct), the alignment is also with Quercus' craft itself, not just with <![CDATA[<color=lightblue>White Hole Station</color>]]>'s singularity. With how far he has traveled, the window should be fairly forgiving (about a minute or so).": "克拉里：严格来说（这是最正确的说法），校准对象不仅是<![CDATA[<color=lightblue>白洞站</color>]]>的奇点，还包括奎尔库斯的飞船本身。考虑到他走了这么远，跃迁窗口应该相当宽松（大概一分钟左右）。",
+
+    // TEXT_ENTRY_COMPUTER
+    "Detected approaching spacecraft. Waking from low-power state...": "检测到接近的航天器。正从低功耗状态唤醒…",
+    "One life sign detected. Opening wormhole...": "检测到一个生命信号。正在开启虫洞…",
+    "One life form warped aboard.": "一个生命体已跃迁登船。",
+
+    // TEXT_ENTRY_FUEL_TANK
+    "MITIS: Quercus, I'm quite curious why you requested such highly volatile fluids. I must depart, but I will leave the delivery here. I would love to chat about your project sometime.": "米蒂斯：奎尔库斯，我很好奇你为什么要这种挥发性极强的液体。我得走了，补给就放这儿了。有空真想聊聊你的项目。",
+
+    // TEXT_ENTRY_WELCOME
+    "Welcome to my <![CDATA[<color=orange>Arcanum</color>]]>. Here I invite all sentient beings, Nomai or otherwise, to share in our knowledge. Each layer of this tower will bring you closer to quantum enlightenment.": "欢迎来到我的<![CDATA[<color=orange>秘域</color>]]>。在此我邀请所有智慧生命，无论是否是挪麦人，来共享我们的知识。这座塔的每一层都会带你更接近量子的真谛。",
+
+    // TEXT_ENTRY_FAILURE
+    "Incorrect data entry detected. Beginning recovery process...": "检测到错误的数据输入。开始恢复进程…",
+    "Resetting data entry state...": "正在重置数据输入状态…",
+    "Complete. Tower re-entry now permitted.": "完成。现已允许重新进入塔楼。",
+
+    // TEXT_SIGNAL_PUZZLE_GUIDE
+    "The first coordinate has been hidden within this room. The quantum object shall reveal the true path.": "第一个坐标就藏在这个房间里。量子物体将为你揭示真正的路径。",
+
+    // TEXT_SIGNAL_PUZZLE_HINT
+    "For help finding safe passage through the wormholes, recall the following lesson:": "若想找到安全通过虫洞的方法，请回想以下要点：",
+    "Sight is not the only means by which we observe the universe.": "观察宇宙的方式并非只有视觉一种。",
+
+    // TEXT_SIGNAL_PUZZLE_COORD_REMINDER
+    "Commit the coordinate to memory, or record its image using a device. You will need it.": "请牢记这个坐标，或用设备记录下它的图像。你会用得到的。",
+
+    // TEXT_DOOR_PUZZLE_GUIDE
+    "The second coordinate lies directly ahead. Only two quantum objects prevent your passage.": "第二个坐标就在正前方。只有两个量子物体阻挡着你的去路。",
+
+    // TEXT_DOOR_PUZZLE_FAKE
+    "Often the answers we seek lie not in plain view.": "我们追寻的答案往往并非一目了然。",
+    "However, all will be revealed to those with a curious mind.": "但对于心怀好奇之人，一切终将揭晓。",
+
+    // TEXT_PLATFORM_PUZZLE_GUIDE
+    "The third coordinate has been hidden here. Unlike us, the quantum objects here are not subjected to conventional antigravity.": "第三个坐标藏在这里。与我们不同，这里的量子物体不受常规反重力的影响。",
+
+    // TEXT_TOWER_PEAK_0
+    "The coordinates you have entered correspond to the system where my clan resides. Located there is an ancient anomaly we named <![CDATA[<color=lightblue>The Eye of the Universe</color>]]>.": "你输入的坐标对应着我的家族所在的星系。那里有一个我们称之为<![CDATA[<color=lightblue>宇宙之眼</color>]]>的古老异常现象。",
+
+    // TEXT_TOWER_PEAK_1
+    "This craft's computer systems contains a complete database of all research I and my clan have conducted on the <![CDATA[<color=lightblue>Eye</color>]]> and the quantum macro-mechanics it exhibits.": "这艘飞船的计算机系统中存有完整的数据库，收录了我和我的家族对<![CDATA[<color=lightblue>宇宙之眼</color>]]>及其所展现的宏观量子力学的全部研究。",
+
+    // TEXT_TOWER_PEAK_2
+    "By passing the trials I have constructed, you have demonstrated a willingness to learn about macro-quantum behavior. Using our knowledge, I believe you will be equipped to some day locate the <![CDATA[<color=lightblue>Eye</color>]]> and unravel its secrets.": "通过我设计的考验，你已展现出学习宏观量子行为的意愿。我相信，借助我们的知识，终有一天你能够找到<![CDATA[<color=lightblue>宇宙之眼</color>]]>并揭开它的秘密。",
+
+    // TEXT_TOWER_PEAK_3
+    "The resupply runs have stopped. What has become of the others? My food and water stores are limited. Is abandoning my mission and returning my only option?": "补给已经中断了。其他人怎么样了？我的食物和水储备都很有限。难道我只能放弃任务回去吗？",
+    "I created a makeshift sensor apparatus and sent it through the wormhole. I detected no signs of life. I hypothesize that something terrible has happened.": "我制作了一个临时传感器装置，把它送过了虫洞。没有检测到任何生命迹象。我推测发生了可怕的事情。",
+    "I have decided. I will not return through the wormhole and abandon my work. I will maintain this craft for as long as I am able.": "我已经决定了。我不会穿过虫洞回去，我不会放弃我的工作。我会尽我所能维护这艘飞船。",
+    "I can hardly raise my staff any longer... If my life has ended, please, honor an old Nomai's final request: make use of my clan's knowledge. Discover the true nature of the Eye. Attain the enlightenment we could not.": "我几乎已经举不动我的手杖了…如果我的生命已经终结，请满足一个老挪麦人的最后请求：利用我家族的知识，去发现宇宙之眼的真正本质，去获得我们未能触及的顿悟。",
+
+    // TEXT_TOWER_PEAK_4
+    "The wormhole above will take you to my home system, where the Eye resides. You will not be able to return after traveling through it, so make your preparations.": "上方的虫洞会带你前往我家乡的星系，宇宙之眼就在那里。穿过之后就无法返回了，所以做好准备吧。",
+
+    // DIALOGUE_ERNESTO
+    "Hey it's me Ernesto the magic talking anglerfish.": "嘿，是我，会说话的魔法安康鱼厄内斯托。",
+    "Wow, the real Ernesto! I'm a huge fan!": "哇，真的是厄内斯托！我是你的超级粉丝！",
+    "How did you get here?": "你怎么到这来的？",
+    "I'll see you around.": "回头见。",
+    "If you're a huge fan, why aren't you blowing air at me?": "如果你是我的超级粉丝，为什么你不向我吹气呢？",
+    "Haha that's a joke. I'm working on my standup comedy routine.": "哈哈，开玩笑的。我正在练习我的单口喜剧呢。",
+    "Well played.": "说得不错嘛。",
+    "Uhh.... something something quantum, quantum quantum...": "呃…量子什么的，量子量子…",
+    "That doesn't make any sens--": "这根本说不通—",
+    "Bye bye!": "拜拜！"
+  }
+}
