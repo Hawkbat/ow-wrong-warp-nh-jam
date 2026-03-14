@@ -19,3 +19,8 @@ Tag or message @hawkbar in the Outer Wilds Modding Discord with bug reports or q
 
 - Hawkbar: Design, Technical Art, Tooling
 - Insmoshable: Environment Art, Design
+
+## Translations
+
+- Chinese (Simplified): SanBaiMing
+- Japanese: TRSasasusu
